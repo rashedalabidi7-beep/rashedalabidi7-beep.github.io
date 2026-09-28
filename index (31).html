@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="الموقع الشخصي والملف التعريفي لرشيد العبيدي، مهتم بالتقنية والذكاء الاصطناعي والتحول الرقمي والتنمية المستدامة." />
+  <meta name="theme-color" content="#061412" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="رشيد العبيدي | الملف الشخصي" />
+  <meta property="og:description" content="مهتم بالتقنية والذكاء الاصطناعي والتحول الرقمي والتنمية المستدامة." />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%2310b981'/%3E%3Ctext x='32' y='45' font-size='38' text-anchor='middle' fill='%2303120e' font-family='sans-serif' font-weight='700'%3E%D8%B1%3C/text%3E%3C/svg%3E" />
+  <script>document.documentElement.classList.add("js")</script>
+  <title>رشيد العبيدي | الملف الشخصي</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+  <style>
+    :root {
+      --bg: #061412;
+      --bg-soft: #0c2723;
+      --card: rgba(12, 35, 31, 0.65);
+      --card-strong: rgba(16, 48, 42, 0.9);
+      --text: #f0fdfa;
+      --muted: #99f6e4;
+      --line: rgba(16, 185, 129, 0.2);
+      --primary: #10b981;
+      --secondary: #06b6d4;
+      --accent: #f59e0b;
+      --shadow: 0 20px 70px rgba(0, 0, 0, 0.4);
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: "Cairo", sans-serif;
+      background:
+        radial-gradient(circle at 10% 10%, rgba(16, 185, 129, .15), transparent 28%),
+        radial-gradient(circle at 90% 15%, rgba(6, 182, 212, .15), transparent 30%),
+        linear-gradient(135deg, var(--bg), #04100e 55%, #020a09);
+      color: var(--text);
+      line-height: 1.85;
+      overflow-x: hidden;
+    }
+
+    body.light {
+      --bg: #f0fdf4;
+      --bg-soft: #dcfce7;
+      --card: rgba(255, 255, 255, 0.75);
+      --card-strong: rgba(255, 255, 255, 0.95);
+      --text: #064e3b;
+      --muted: #047857;
+      --line: rgba(16, 185, 129, 0.25);
+      --primary: #059669;
+      --secondary: #0891b2;
+      --accent: #d97706;
+      --shadow: 0 20px 60px rgba(6, 78, 59, 0.12);
+      background:
+        radial-gradient(circle at 10% 10%, rgba(5, 150, 105, .15), transparent 28%),
+        radial-gradient(circle at 90% 15%, rgba(8, 145, 178, .13), transparent 30%),
+        linear-gradient(135deg, #f0fdf4, #e6f4ea);
+    }
+
+    a { color: inherit; text-decoration: none; }
+    button, a { -webkit-tap-highlight-color: transparent; }
+    .container { width: min(1160px, 92%); margin: auto; }
+    .glass {
+      background: var(--card);
+      border: 1px solid var(--line);
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+    }
+
+    .navbar {
+      position: fixed; inset: 0 0 auto 0; z-index: 1000;
+      background: rgba(6, 20, 18, .75);
+      border-bottom: 1px solid var(--line);
+      backdrop-filter: blur(18px);
+    }
+    body.light .navbar { background: rgba(240, 253, 244, .75); }
+    .nav-inner {
+      min-height: 76px; display: flex; align-items: center;
+      justify-content: space-between; gap: 20px;
+    }
+    .brand { display: flex; align-items: center; gap: 10px; font-weight: 800; font-size: 1.2rem; }
+    .brand-mark {
+      width: 42px; height: 42px; border-radius: 14px;
+      display: grid; place-items: center;
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      color: #03120e; font-weight: 900;
+    }
+    .nav-links { display: flex; align-items: center; gap: 24px; }
+    .nav-links a { color: var(--muted); font-size: .9rem; transition: .25s; }
+    .nav-links a:hover { color: var(--primary); }
+    .nav-actions { display: flex; gap: 9px; }
+    .icon-btn {
+      border: 1px solid var(--line); background: var(--card);
+      color: var(--text); width: 40px; height: 40px; border-radius: 12px;
+      cursor: pointer; transition: .25s;
+    }
+    .icon-btn:hover { transform: translateY(-2px); border-color: var(--primary); color: var(--primary); }
+    .menu-btn { display: none; }
+
+    .hero { padding: 155px 0 90px; min-height: 720px; display: flex; align-items: center; }
+    .hero-grid { display: grid; grid-template-columns: 1.1fr .9fr; gap: 70px; align-items: center; }
+    .eyebrow {
+      display: inline-flex; align-items: center; gap: 9px;
+      color: var(--accent); background: rgba(16, 185, 129, .08);
+      border: 1px solid rgba(16, 185, 129, .2);
+      padding: 7px 14px; border-radius: 999px; font-size: .83rem; margin-bottom: 18px;
+    }
+    .eyebrow span { width: 8px; height: 8px; background: var(--accent); border-radius: 50%; box-shadow: 0 0 14px var(--accent); }
+    h1 { font-size: clamp(2.3rem, 5vw, 4.5rem); line-height: 1.25; letter-spacing: -2px; margin-bottom: 18px; }
+    .gradient-text {
+      background: linear-gradient(100deg, var(--primary), var(--secondary));
+      -webkit-background-clip: text; background-clip: text; color: transparent;
+    }
+    .hero p { color: var(--muted); max-width: 620px; font-size: 1.08rem; }
+    .hero-buttons { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center; gap: 10px;
+      border-radius: 14px; padding: 12px 19px; border: 1px solid var(--line);
+      font-weight: 700; font-size: .92rem; transition: .25s; cursor: pointer;
+    }
+    .btn:hover { transform: translateY(-3px); }
+    .btn-primary { background: linear-gradient(135deg, var(--primary), var(--secondary)); color: #03120e; border: none; }
+    .btn-outline { background: var(--card); color: var(--text); }
+    .btn-outline:hover { border-color: var(--primary); color: var(--primary); }
+    .socials { display: flex; gap: 10px; margin-top: 25px; }
+    .social {
+      width: 42px; height: 42px; display: grid; place-items: center;
+      border-radius: 13px; background: var(--card); border: 1px solid var(--line);
+      color: var(--muted); transition: .25s;
+    }
+    .social:hover { color: var(--primary); border-color: var(--primary); transform: translateY(-3px); }
+
+    .profile-wrap { position: relative; width: min(390px, 100%); margin: auto; }
+    .profile-wrap::before {
+      content: ""; position: absolute; inset: -20px; border-radius: 42px;
+      border: 1px solid rgba(16, 185, 129, .22); transform: rotate(7deg);
+    }
+    .profile-wrap::after {
+      content: ""; position: absolute; width: 130px; height: 130px; border-radius: 50%;
+      background: rgba(6, 182, 212, .25); filter: blur(35px); left: -35px; bottom: -30px;
+    }
+    .profile-card { position: relative; z-index: 1; padding: 12px; border-radius: 32px; }
+    .profile-card img {
+      display: block; width: 100%; aspect-ratio: 4 / 5; object-fit: cover;
+      object-position: center top; border-radius: 24px; filter: saturate(.95);
+    }
+    .profile-label {
+      position: absolute; z-index: 2; bottom: 28px; right: -22px;
+      padding: 14px 17px; border-radius: 17px; background: var(--card-strong);
+      border: 1px solid var(--line); box-shadow: var(--shadow);
+    }
+    .profile-label strong { display: block; font-size: 1rem; color: var(--accent); }
+    .profile-label small { color: var(--muted); }
+
+    section { padding: 85px 0; }
+    .section-head { margin-bottom: 35px; }
+    .section-kicker { color: var(--primary); font-size: .82rem; font-weight: 800; letter-spacing: 1px; }
+    .section-title { font-size: clamp(1.8rem, 3vw, 2.7rem); margin-top: 5px; }
+    .section-desc { color: var(--muted); max-width: 650px; margin-top: 8px; }
+
+    .stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 15px; margin-top: 45px; }
+    .stat { padding: 22px; border-radius: 20px; text-align: center; }
+    .stat-number { font-family: "Space Grotesk", sans-serif; font-size: 2rem; color: var(--primary); font-weight: 700; }
+    .stat-label { color: var(--muted); font-size: .82rem; }
+
+    .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; }
+    .card { border-radius: 24px; padding: 28px; }
+    .card h3 { margin-bottom: 12px; font-size: 1.25rem; }
+    .card p { color: var(--muted); }
+    .quote { border-right: 3px solid var(--primary); padding-right: 18px; margin-top: 18px; color: var(--text); }
+
+    .skills-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+    .skill-card { padding: 25px; border-radius: 22px; }
+    .skill-icon {
+      width: 52px; height: 52px; border-radius: 16px; display: grid; place-items: center;
+      background: rgba(16, 185, 129, .1); color: var(--primary); font-size: 1.25rem; margin-bottom: 15px;
+    }
+    .skill-card p { color: var(--muted); font-size: .9rem; }
+    .tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px; }
+    .tag { color: var(--muted); border: 1px solid var(--line); padding: 4px 10px; border-radius: 999px; font-size: .76rem; }
+
+    .projects-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+    .project { overflow: hidden; border-radius: 24px; }
+    .project-top {
+      height: 190px; display: grid; place-items: center;
+      background: linear-gradient(135deg, rgba(16, 185, 129, .15), rgba(6, 182, 212, .2));
+      color: var(--primary); font-size: 4rem;
+    }
+    .project-body { padding: 25px; }
+    .project-body h3 { margin-bottom: 8px; }
+    .project-body p { color: var(--muted); font-size: .9rem; }
+    .project-actions { display: flex; gap: 10px; margin-top: 18px; }
+
+    .doi-badge {
+      display: inline-flex; align-items: center; gap: 6px;
+      background: rgba(16, 185, 129, 0.1); border: 1px solid var(--line);
+      padding: 4px 12px; border-radius: 8px; font-size: 0.8rem;
+      color: var(--primary); font-family: "Space Grotesk", sans-serif;
+      margin-top: 10px; margin-bottom: 5px;
+    }
+
+    .timeline { position: relative; display: grid; gap: 18px; }
+    .timeline::before { content: ""; position: absolute; top: 8px; bottom: 8px; right: 12px; width: 2px; background: var(--line); }
+    .timeline-item { position: relative; padding: 0 42px 4px 0; }
+    .timeline-item::before {
+      content: ""; position: absolute; right: 5px; top: 10px; width: 16px; height: 16px;
+      border-radius: 50%; background: var(--primary); box-shadow: 0 0 0 5px rgba(16, 185, 129, .1);
+    }
+    .timeline-item h3 { font-size: 1.05rem; }
+    .timeline-item .date { color: var(--primary); font-size: .78rem; }
+    .timeline-item p { color: var(--muted); font-size: .88rem; margin-top: 4px; }
+
+    .volunteer-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+
+    .contact-grid { display: grid; grid-template-columns: .8fr 1.2fr; gap: 20px; }
+    .contact-list { display: grid; gap: 12px; margin-top: 18px; }
+    .contact-item { display: flex; align-items: center; gap: 13px; color: var(--muted); }
+    .contact-item i { color: var(--primary); width: 20px; text-align: center; }
+    .contact-item a:hover { color: var(--primary); }
+    form { display: grid; gap: 14px; }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+    input, textarea {
+      width: 100%; border: 1px solid var(--line); background: rgba(0, 0, 0, .15);
+      color: var(--text); border-radius: 14px; padding: 13px 15px; font: inherit; outline: none;
+    }
+    body.light input, body.light textarea { background: rgba(255, 255, 255, .55); }
+    input:focus, textarea:focus { border-color: var(--primary); }
+    textarea { min-height: 145px; resize: vertical; }
+
+    footer { padding: 28px 0; border-top: 1px solid var(--line); color: var(--muted); text-align: center; font-size: .85rem; }
+    .back-top {
+      position: fixed; left: 22px; bottom: 22px; width: 44px; height: 44px;
+      border: 1px solid var(--line); background: var(--card-strong); color: var(--text);
+      border-radius: 14px; cursor: pointer; opacity: 0; pointer-events: none; transition: .25s; z-index: 50;
+    }
+    .back-top.show { opacity: 1; pointer-events: auto; }
+
+    .js .reveal { opacity: 0; transform: translateY(25px); transition: .7s ease; }
+    .js .reveal.visible { opacity: 1; transform: translateY(0); }
+
+    @media (max-width: 900px) {
+      .nav-links { position: absolute; top: 76px; right: 4%; left: 4%; display: none; flex-direction: column; align-items: stretch; padding: 18px; border-radius: 18px; background: var(--card-strong); border: 1px solid var(--line); }
+      .nav-links.open { display: flex; }
+      .nav-links a { padding: 8px 4px; }
+      .menu-btn { display: block; }
+      .hero-grid, .about-grid, .contact-grid, .volunteer-grid { grid-template-columns: 1fr; }
+      .hero { padding-top: 125px; }
+      .profile-wrap { max-width: 340px; margin-top: 20px; }
+      .skills-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 600px) {
+      .nav-inner { min-height: 68px; }
+      .brand { font-size: 1rem; }
+      .brand-mark { width: 37px; height: 37px; border-radius: 11px; }
+      .hero { padding-bottom: 50px; }
+      h1 { letter-spacing: -1px; }
+      .hero p { font-size: .95rem; }
+      section { padding: 58px 0; }
+      .stats { grid-template-columns: repeat(2, 1fr); }
+      .skills-grid, .projects-grid { grid-template-columns: 1fr; }
+      .form-row { grid-template-columns: 1fr; }
+      .profile-label { right: -5px; }
+      .card, .skill-card { padding: 22px; }
+    }
+      .navbar { padding-top: env(safe-area-inset-top, 0px); }
+    #prog { position: fixed; top: 0; inset-inline: 0; height: 3px; transform-origin: right; transform: scaleX(0); background: linear-gradient(90deg, var(--primary), var(--secondary)); z-index: 1001; }
+    .nav-links a.active { color: var(--primary); font-weight: 700; }
+    .roles { margin-top: 10px; font-weight: 600; }
+    #role { color: var(--accent); transition: opacity .3s; }
+    .ph { aspect-ratio: 4 / 5; border-radius: 24px; display: grid; place-items: center; font-size: 5rem; font-weight: 800; background: linear-gradient(135deg, var(--primary), var(--secondary)); color: #03120e; }
+    a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+    @media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; } html { scroll-behavior: auto; } .js .reveal { opacity: 1; transform: none; } }
+  </style>
+</head>
+
+<body>
+  <div id="prog"></div>
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a href="#home" class="brand">
+        <span class="brand-mark">ر</span>
+        <span>رشيد العبيدي</span>
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#home">الرئيسية</a>
+        <a href="#about">نبذة عني</a>
+        <a href="#research">الأبحاث</a>
+        <a href="#skills">المهارات</a>
+        <a href="#projects">المشاريع</a>
+        <a href="#experience">البرامج والمؤهلات</a>
+        <a href="#volunteering">التطوع والمبادرات</a>
+        <a href="#contact">تواصل معي</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="icon-btn menu-btn" id="menuBtn" aria-label="فتح القائمة"><i class="fa-solid fa-bars"></i></button>
+        <button class="icon-btn" id="themeBtn" aria-label="تبديل المظهر"><i class="fa-solid fa-sun"></i></button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div class="reveal">
+          <div class="eyebrow"><span></span> مهتم بالتقنيات الحديثة والذكاء الاصطناعي</div>
+          <h1>مرحبًا، أنا <span class="gradient-text">رشيد العبيدي</span></h1>
+          <p class="roles">أعمل في مجال: <b id="role"></b></p>
+          <p>
+            شغوف بالتكنولوجيا وتطبيقات الذكاء الاصطناعي، وأطمح لتوظيف التكنولوجيا في خدمة التنمية المستدامة وتمكين الشباب. أمتلك خلفية في البحث العلمي الموجه نحو الأثر المجتمعي وأسعى للابتكار الرقمي.
+          </p>
+
+          <div class="hero-buttons">
+            <a class="btn btn-primary" href="cv.pdf" download id="cvBtn">
+              <i class="fa-solid fa-file-arrow-down"></i>
+              تحميل السيرة الذاتية
+            </a>
+            <a class="btn btn-outline" href="#projects">
+              <i class="fa-solid fa-code"></i>
+              استكشف مشاريعي
+            </a>
+          </div>
+
+          <div class="socials">
+            <a class="social" href="https://github.com/rashedalabidi7-beep" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a class="social" href="https://www.linkedin.com/in/rashed-alabidi" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a class="social" href="https://wa.me/967772639165" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+            <a class="social" href="tel:+967772639165" aria-label="الهاتف"><i class="fa-solid fa-phone"></i></a>
+            <a class="social" href="mailto:rashedalabidi7@gmail.com" aria-label="البريد الإلكتروني"><i class="fa-solid fa-envelope"></i></a>
+            <a class="social" href="https://orcid.org/0009-0006-7410-5763" target="_blank" rel="noopener" aria-label="ORCID" title="ORCID"><i class="fa-brands fa-orcid"></i></a>
+          </div>
+        </div>
+
+        <div class="profile-wrap reveal">
+          <div class="profile-card glass">
+            <img src="profile.jpg" alt="الصورة الشخصية لرشيد العبيدي" onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'ph',textContent:'ر'}))">
+          </div>
+          <div class="profile-label glass">
+            <strong>رشيد العبيدي</strong>
+            <small><i class="fa-solid fa-location-dot"></i> حضرموت، اليمن</small>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container">
+      <div class="stats">
+        <div class="stat glass reveal"><div class="stat-number" data-target="12">0</div><div class="stat-label">برامج ودورات تطويرية</div></div>
+        <div class="stat glass reveal"><div class="stat-number" data-target="2">0</div><div class="stat-label">أوراق بحثية منشورة</div></div>
+        <div class="stat glass reveal"><div class="stat-number" data-target="2">0</div><div class="stat-label">مبادرات تطوعية</div></div>
+        <div class="stat glass reveal"><div class="stat-number" data-target="4">0</div><div class="stat-label">مجالات تقنية متميزة</div></div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="section-kicker">01 — نبذة شخصية</div>
+          <h2 class="section-title">من أنا؟ وما الذي أسعى إليه؟</h2>
+          <p class="section-desc">أؤمن بأن التقنية والبحث العلمي الموجه هما الأساس لصناعة الفرص وخدمة المجتمع بشكل مستدام.</p>
+        </div>
+
+        <div class="about-grid">
+          <article class="card glass reveal">
+            <h3><i class="fa-solid fa-user-astronaut gradient-text"></i> نبذة عني</h3>
+            <p>
+              أنا رشيد العبيدي، خريج ثانوية عامة (المسار العلمي) من ثانوية بامطرف للبنين بحضرموت.
+              أمتلك شغفاً بالذكاء الاصطناعي، التحول الرقمي، وإدارة المعرفة، بالإضافة إلى الخبرة في المبادرات والأنشطة التطوعية.
+            </p>
+            <p class="quote">
+              أسعى لاستغلال مهاراتي الرقمية للمساهمة في ابتكار حلول تدعم التعليم وتصنع تغييراً إيجابياً ومستداماً.
+            </p>
+          </article>
+
+          <article class="card glass reveal">
+            <h3><i class="fa-solid fa-bullseye gradient-text"></i> رؤيتي والهدف</h3>
+            <p>
+              توظيف التكنولوجيا الحديثة وأدوات الذكاء الاصطناعي في تمكين الشباب وبناء حلول معلوماتية تدعم التنمية المستدامة برؤية عالمية.
+            </p>
+            <div class="tags">
+              <span class="tag">الذكاء الاصطناعي الوكيلي</span>
+              <span class="tag">إدارة المعرفة</span>
+              <span class="tag">التنمية المستدامة (SDGs)</span>
+              <span class="tag">البحث العلمي</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="research">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="section-kicker">02 — الأبحاث والأوراق العلمية</div>
+          <h2 class="section-title">النتاج البحثي والمعرفي</h2>
+          <p class="section-desc">أوراق بحثية منشورة على منصة Zenodo تسلط الضوء على دور التقنية والشباب في الوعي والتنمية المجتمعية.</p>
+        </div>
+
+        <div class="projects-grid">
+          <article class="project glass reveal">
+            <div class="project-top"><i class="fa-solid fa-book-bookmark"></i></div>
+          
+            <div class="project-body">
+              <h3>دور التكنولوجيا في بناء مجتمعات أكثر وعياً</h3>
+              <div class="doi-badge"><i class="fa-solid fa-fingerprint"></i> DOI: 10.5281/zenodo.20088549</div>
+              <p>
+                ورقة بحثية (مايو 2026) تستعرض دور المنصات الرقمية الحديثة والتعليم الإلكتروني في دعم التحول المعرفي وخدمة قضايا التنمية المجتمعية.
+              </p>
+                    <div class="tags"><span class="tag">التحول المعرفي</span><span class="tag">التعليم الرقمي</span><span class="tag">البحث العلمي</span></div>
+              <div class="project-actions">
+                <a class="btn btn-primary" href="https://doi.org/10.5281/zenodo.20088549" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i> عرض الورقة البحثية</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project glass reveal">
+            <div class="project-top"><i class="fa-solid fa-users-gear"></i></div>
+            <div class="project-body">
+              <h3>دور الشباب في تعزيز التنمية المجتمعية باستخدام التكنولوجيا</h3>
+              <div class="doi-badge"><i class="fa-solid fa-fingerprint"></i> DOI: 10.5281/zenodo.17839145</div>
+              <p>
+                ورقة بحثية (ديسمبر 2025) تسلط الضوء على آليات تمكين الشباب عبر الابتكار الرقمي وبناء المهارات التكنولوجية لضمان تنمية مستدامة.
+              </p>
+              <div class="tags"><span class="tag">تمكين الشباب</span><span class="tag">الابتكار الرقمي</span><span class="tag">التنمية المستدامة</span></div>
+              <div class="project-actions">
+                <a class="btn btn-primary" href="https://doi.org/10.5281/zenodo.17839145" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i> عرض الورقة البحثية</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="section-kicker">03 — المهارات والقدرات</div>
+          <h2 class="section-title">المهارات التقنية والشخصية</h2>
+          <p class="section-desc">مزيج من المهارات المتقدمة في التكنولوجيا، التحليل، والقيادة.</p>
+        </div>
+
+        <div class="skills-grid">
+          <article class="skill-card glass reveal">
+            <div class="skill-icon"><i class="fa-solid fa-robot"></i></div>
+            <h3>الذكاء الاصطناعي والبيانات</h3>
+            <p>أساسيات الذكاء الاصطناعي التوليدي، تصميم الأنظمة الوكيلة (Agentic Systems)، وتسمية وتصنيف البيانات.</p>
+            <div class="tags"><span class="tag">AI Basics</span><span class="tag">Agentic AI</span><span class="tag">Data Annotation</span></div>
+          </article>
+
+          <article class="skill-card glass reveal">
+            <div class="skill-icon"><i class="fa-solid fa-network-wired"></i></div>
+            <h3>التحول الرقمي والبنية التحتية</h3>
+            <p>فهم أطر الهويات الرقمية والمدفوعات لتعزيز الشمول الرقمي والبنية التحتية العامة.</p>
+            <div class="tags"><span class="tag">Public Digital Infra</span><span class="tag">Digital Transformation</span></div>
+          </article>
+
+          <article class="skill-card glass reveal">
+            <div class="skill-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+            <h3>البحث العلمي وتحليل المعلومات</h3>
+            <p>البحث الأكاديمي، تحليل البيانات المعقدة، استخدام قواعد البيانات العلمية وأدوات WIPO.</p>
+            <div class="tags"><span class="tag">Research</span><span class="tag">Data Analysis</span></div>
+          </article>
+
+          <article class="skill-card glass reveal">
+            <div class="skill-icon"><i class="fa-solid fa-bullhorn"></i></div>
+            <h3>التسويق والتجارة الإلكترونية</h3>
+            <p>دراسة استراتيجيات التسويق الرقمي وإدارة قنوات التجارة الإلكترونية المعتمدة من Google.</p>
+            <div class="tags"><span class="tag">Digital Marketing</span><span class="tag">E-commerce</span></div>
+          </article>
+
+          <article class="skill-card glass reveal">
+            <div class="skill-icon"><i class="fa-solid fa-brain"></i></div>
+            <h3>التفكير وحل المشكلات</h3>
+            <p>حل المشكلات المعقدة بالاعتماد على البيانات، التفكير التحليلي والقيادة التكيفية.</p>
+            <div class="tags"><span class="tag">Analytical Thinking</span><span class="tag">McKinsey Methodologies</span></div>
+          </article>
+
+          <article class="skill-card glass reveal">
+            <div class="skill-icon"><i class="fa-solid fa-handshake"></i></div>
+            <h3>القيادة والتواصل</h3>
+            <p>القيادة، الاتصال الفعال، العمل الجماعي التشاركي، وإدارة الوقت والتعلم المستمر.</p>
+            <div class="tags"><span class="tag">Adaptive Leadership</span><span class="tag">Communication</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="section-kicker">04 — المشاريع والتطبيقات</div>
+          <h2 class="section-title">مشاريع وحلول رقمية</h2>
+          <p class="section-desc">أدوات وتطبيقات تم تطويرها لخدمة أغراض متعددة.</p>
+        </div>
+
+        <div class="projects-grid">
+          <article class="project glass reveal">
+            <div class="project-top"><i class="fa-solid fa-calculator"></i></div>
+            <div class="project-body">
+              <h3>حاسبة الراتب</h3>
+              <p>
+                أداة ويب لحساب الراتب بطريقة سهلة ومنظمة مع واجهة بسيطة مناسبة للاستخدام اليومي.
+              </p>
+              <div class="tags"><span class="tag">Web App</span><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
+              <div class="project-actions">
+                <a class="btn btn-primary" href="https://rashedalabidi7-beep.github.io/salary-calculator/" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i> عرض المشروع</a>
+                <a class="btn btn-outline" href="https://github.com/rashedalabidi7-beep" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> GitHub</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project glass reveal">
+            <div class="project-top"><i class="fa-solid fa-mobile-screen"></i></div>
+            <div class="project-body">
+              <h3>مساحتي: تطبيق شخصي لتنظيم الحياة</h3>
+              <p>تطبيق ويب لإدارة الدراسة والمال والعادات والملاحظات، بتسجيل دخول Google وحفظ سحابي عبر Firebase، ووضع ليلي ونهاري وواجهة عربية وإنجليزية.</p>
+              <div class="tags"><span class="tag">Firebase</span><span class="tag">Google Auth</span><span class="tag">JavaScript</span></div>
+              <div class="project-actions">
+                <a class="btn btn-primary" href="https://rashedalabidi7-beep.github.io/masahati/" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i> عرض المشروع</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project glass reveal">
+            <div class="project-top"><i class="fa-solid fa-lightbulb"></i></div>
+            <div class="project-body">
+              <h3>أفكار وحلول رقمية مستقبلية</h3>
+              <p>
+                تطوير أفكار لمشاريع في الأتمتة، تنظيم المعرفة، والذكاء الاصطناعي لتقديم محتوى مفيد وصنع أثر رقمي.
+              </p>
+              <div class="tags"><span class="tag">Automation</span><span class="tag">AI</span><span class="tag">Knowledge Management</span></div>
+              <div class="project-actions">
+                <a class="btn btn-outline" href="mailto:rashedalabidi7@gmail.com?subject=استفسار عن المشاريع"><i class="fa-solid fa-envelope"></i> تواصل للاستفسار</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="section-kicker">05 — البرامج والشهادات</div>
+          <h2 class="section-title">مسيرة التعلم والتطوير المهني</h2>
+          <p class="section-desc">مؤهلات، برامج تدريبية، وشهادات دولية تم الحصول عليها.</p>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline-item reveal">
+            <div class="date">أغسطس 2026 - الحالي</div>
+            <h3>برنامج الجاهزية المهنية للشباب العربي (مقبول ومحاضر)</h3>
+            <p>مبادرة أطلقها <strong>مركز الشباب العربي</strong> بالتعاون مع منصة <strong>LinkedIn Learning</strong> بهدف تمكين الشباب واكتساب مهارات عملية وشهادات مهنية معترف بها وبناء ملفات شخصية احترافية لمواكبة متطلبات سوق العمل (يمتد لمدة 5 أشهر ويشمل 10 مسارات تعليمية وتقنية).</p>
+          </div>
+          <div class="timeline-item reveal">
+            <div class="date">يوليو 2026</div>
+            <h3>برنامج ماكنزي فورورد — McKinsey Forward | McKinsey & Company</h3>
+            <p>برنامج مكثف لتطوير المهارات القيادية والتحليلية، القيادة التكيفية، وحل المشكلات المعقدة بناءً على البيانات.</p>
+          </div>
+          <div class="timeline-item reveal">
+            <div class="date">مايو 2026</div>
+            <h3>معسكر الذكاء الاصطناعي الوكيلي — IBM SkillsBuild Youth</h3>
+            <p>تدريب مكثف في أساسيات الذكاء الاصطناعي التوليدي وتصميم الأنظمة الذكية الوكيلة (Agentic Systems).</p>
+          </div>
+          <div class="timeline-item reveal">
+            <div class="date">أبريل 2026</div>
+            <h3>سلسلة ندوات الملكية الفكرية والبحث العلمي — WIPO</h3>
+            <p>تعزيز مهارات البحث العلمي والتعرف على أدوات الويبو وقواعد البيانات العلمية لدعم الوصول للمعرفة.</p>
+          </div>
+          <div class="timeline-item reveal">
+            <div class="date">مارس 2026</div>
+            <h3>إدارة المعرفة للمحترفين الشباب — UNU-MERIT وجامعة ماسترخت</h3>
+            <p>تدريب متخصص في تنظيم الأصول المعرفية وبناء الحلول المعلوماتية المستدامة لتمكين المجتمعات (معتمد بـ 2 ECTS Credits).</p>
+          </div>
+          <div class="timeline-item reveal">
+            <div class="date">يناير 2026</div>
+            <h3>أساسيات التسويق الرقمي والتجارة الإلكترونية — Google (Coursera)</h3>
+            <p>دراسة شاملة لاستراتيجيات التسويق الرقمي وإدارة قنوات التجارة الإلكترونية.</p>
+          </div>
+          <div class="timeline-item reveal">
+            <div class="date">ديسمبر 2025</div>
+            <h3>الذكاء الاصطناعي للجميع — DeepLearning.AI & ICDL</h3>
+            <p>دراسة أثر تطبيقات الذكاء الاصطناعي التكنولوجية والأخلاقية، والحصول على شهادة ICDL معتمدة.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="volunteering">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="section-kicker">06 — الأثر المجتمعي</div>
+          <h2 class="section-title">المبادرات والأنشطة التطوعية</h2>
+          <p class="section-desc">المشاركات والأنشطة التطوعية التي أسهمت في بناء وخدمة المجتمع والشباب.</p>
+        </div>
+
+        <div class="volunteer-grid">
+          <article class="card glass reveal">
+            <h3><i class="fa-solid fa-hands-holding-child gradient-text"></i> فريق بذرة خير التطوعي</h3>
+            <p>
+              عضو فعال في فريق بذرة خير التطوعي، والمشاركة في التنظيم والمساهمة في تنفيذ المبادرات والأنشطة الإنسانية والمجتمعية المختلفة.
+            </p>
+            <div class="tags" style="margin-top:12px;">
+              <span class="tag">العمل التطوعي</span>
+              <span class="tag">المبادرات المجتمعية</span>
+            </div>
+          </article>
+
+          <article class="card glass reveal">
+            <h3><i class="fa-solid fa-graduation-cap gradient-text"></i> ملتقى شباب قبيلة العبيدي ودعم الطلاب</h3>
+            <p>
+              المشاركة في الأنشطة والبرامج الموجهة لدعم الطلاب وتسهيل مسيرتهم التعليمية وتوجيههم وتأهيلهم للبيئات الأكاديمية.
+            </p>
+            <div class="tags" style="margin-top:12px;">
+              <span class="tag">دعم الطلاب</span>
+              <span class="tag">التوجيه الأكاديمي</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+       <section id="contact">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="section-kicker">07 — التواصل والتطوع</div>
+          <h2 class="section-title">لنتواصل ونعمل معًا</h2>
+          <p class="section-desc">منفتح للتعاون في المشاريع التقنية والفرص التعليمية والتطوعية.</p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="card glass reveal">
+            <h3>معلومات التواصل والتطوع</h3>
+            <p>عضو متطوع في فريق بذرة الخير التطوعي وملتقى شباب قبيلة العبيدي لدعم الطلاب.</p>
+            <div class="contact-list">
+              <div class="contact-item"><i class="fa-solid fa-envelope"></i><a href="mailto:rashedalabidi7@gmail.com">rashedalabidi7@gmail.com</a></div>
+              <div class="contact-item"><i class="fa-solid fa-phone"></i><a href="tel:+967772639165">+967 772 639 165</a></div>
+              <div class="contact-item"><i class="fa-solid fa-location-dot"></i><span>حضرموت، اليمن</span></div>
+              <div class="contact-item"><i class="fa-brands fa-github"></i><a href="https://github.com/rashedalabidi7-beep" target="_blank" rel="noopener">GitHub</a></div>
+              <div class="contact-item"><i class="fa-brands fa-linkedin"></i><a href="https://www.linkedin.com/in/rashed-alabidi" target="_blank" rel="noopener">LinkedIn</a></div>
+              <div class="contact-item"><i class="fa-brands fa-orcid"></i><a href="https://orcid.org/0009-0006-7410-5763" target="_blank" rel="noopener">ORCID</a></div>
+            </div>
+          </div>
+
+          <div class="card glass reveal">
+            <h3>أرسل رسالة</h3>
+            <form id="contactForm">
+              <div class="form-row">
+                <input type="text" placeholder="الاسم" required>
+                <input type="email" placeholder="البريد الإلكتروني" required>
+              </div>
+              <input type="text" placeholder="موضوع الرسالة" required>
+              <textarea placeholder="اكتب رسالتك هنا..." required></textarea>
+              <button class="btn btn-primary" type="submit"><i class="fa-solid fa-paper-plane"></i> إرسال عبر البريد</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      © <span id="year"></span> رشيد العبيدي — جميع الحقوق محفوظة.
+    </div>
+  </footer>
+
+  <button class="back-top" id="backTop" aria-label="العودة إلى الأعلى"><i class="fa-solid fa-arrow-up"></i></button>
+
+  <script>
+    const menuBtn = document.getElementById("menuBtn");
+    const navLinks = document.getElementById("navLinks");
+    const themeBtn = document.getElementById("themeBtn");
+    const backTop = document.getElementById("backTop");
+
+    menuBtn.addEventListener("click", () => {
+      navLinks.classList.toggle("open");
+      menuBtn.setAttribute("aria-expanded", navLinks.classList.contains("open"));
+      menuBtn.innerHTML = navLinks.classList.contains("open")
+        ? '<i class="fa-solid fa-xmark"></i>'
+        : '<i class="fa-solid fa-bars"></i>';
+    });
+
+    document.querySelectorAll(".nav-links a").forEach(link => {
+      link.addEventListener("click", () => {
+        navLinks.classList.remove("open");
+        menuBtn.innerHTML = '<i class="fa-solid fa-bars"></i>';
+      });
+    });
+
+    const ls = { get: k => { try { return localStorage.getItem(k); } catch (e) { return null; } }, set: (k, v) => { try { localStorage.setItem(k, v); } catch (e) {} } };
+    const savedTheme = ls.get("theme") || (matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark");
+    if (savedTheme === "light") {
+      document.body.classList.add("light");
+      themeBtn.innerHTML = '<i class="fa-solid fa-moon"></i>';
+    }
+
+    themeBtn.addEventListener("click", () => {
+      document.body.classList.toggle("light");
+      const light = document.body.classList.contains("light");
+      ls.set("theme", light ? "light" : "dark");
+      themeBtn.innerHTML = light
+        ? '<i class="fa-solid fa-moon"></i>'
+        : '<i class="fa-solid fa-sun"></i>';
+    });
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) entry.target.classList.add("visible");
+      });
+    }, { threshold: .12 });
+
+    document.querySelectorAll(".reveal").forEach(el => observer.observe(el));
+
+    const counters = document.querySelectorAll(".stat-number");
+    const counterObserver = new IntersectionObserver((entries, obs) => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        const el = entry.target;
+        const target = Number(el.dataset.target);
+        let current = 0;
+        const step = Math.max(1, Math.ceil(target / 25));
+        const timer = setInterval(() => {
+          current += step;
+          if (current >= target) {
+            current = target;
+            clearInterval(timer);
+          }
+          el.textContent = current + (target >= 10 ? "+" : "");
+        }, 45);
+        obs.unobserve(el);
+      });
+    }, { threshold: .6 });
+
+    counters.forEach(el => counterObserver.observe(el));
+
+    window.addEventListener("scroll", () => {
+      backTop.classList.toggle("show", window.scrollY > 500);
+    });
+
+    backTop.addEventListener("click", () => window.scrollTo({ top: 0, behavior: "smooth" }));
+
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    document.getElementById("contactForm").addEventListener("submit", (e) => {
+      e.preventDefault();
+      const subject = encodeURIComponent(e.target.querySelector('input[placeholder="موضوع الرسالة"]').value);
+      const message = encodeURIComponent(
+        "الاسم: " + e.target.querySelector('input[placeholder="الاسم"]').value + "\n" +
+        "البريد: " + e.target.querySelector('input[placeholder="البريد الإلكتروني"]').value + "\n\n" +
+        e.target.querySelector("textarea").value
+      );
+      window.location.href = `mailto:rashedalabidi7@gmail.com?subject=${subject}&body=${message}`;
+    });
+  
+    const prog = document.getElementById("prog");
+    addEventListener("scroll", () => {
+      const m = document.documentElement.scrollHeight - innerHeight;
+      prog.style.transform = "scaleX(" + (m > 0 ? scrollY / m : 0) + ")";
+    }, { passive: true });
+
+    const links = [...document.querySelectorAll(".nav-links a")];
+    const spy = new IntersectionObserver(es => es.forEach(e => {
+      if (e.isIntersecting) links.forEach(a => a.classList.toggle("active", a.getAttribute("href") === "#" + e.target.id));
+    }), { rootMargin: "-40% 0px -55% 0px" });
+    document.querySelectorAll("main section[id]").forEach(x => spy.observe(x));
+
+    const roles = ["الذكاء الاصطناعي", "التحول الرقمي", "إدارة المعرفة", "البحث العلمي", "التنمية المستدامة"];
+    const role = document.getElementById("role");
+    let ri = 0;
+    role.textContent = roles[0];
+    if (!matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      setInterval(() => {
+        role.style.opacity = 0;
+        setTimeout(() => { ri = (ri + 1) % roles.length; role.textContent = roles[ri]; role.style.opacity = 1; }, 300);
+      }, 2400);
+    }
+
+    const cv = document.getElementById("cvBtn");
+    fetch("cv.pdf", { method: "HEAD" }).then(r => { if (!r.ok) cv.style.display = "none"; }).catch(() => {});
+  </script>
+</body>
+</html>
