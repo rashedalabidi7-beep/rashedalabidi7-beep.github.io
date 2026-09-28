@@ -5,6 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="الموقع الشخصي والملف التعريفي لرشيد العبيدي، مهتم بالتقنية والذكاء الاصطناعي والتحول الرقمي والتنمية المستدامة." />
   <meta name="theme-color" content="#061412" />
+  <link rel="canonical" href="https://rashedalabidi7-beep.github.io/" />
+  <meta property="og:url" content="https://rashedalabidi7-beep.github.io/" />
+  <meta property="og:image" content="https://rashedalabidi7-beep.github.io/profile.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"رشيد العبيدي","alternateName":"Rashed Alabidi","url":"https://rashedalabidi7-beep.github.io/","image":"https://rashedalabidi7-beep.github.io/profile.jpg","sameAs":["https://github.com/rashedalabidi7-beep","https://www.linkedin.com/in/rashed-alabidi","https://orcid.org/0009-0006-7410-5763"],"address":{"@type":"PostalAddress","addressRegion":"حضرموت","addressCountry":"YE"}}</script>
   <meta property="og:type" content="website" />
   <meta property="og:title" content="رشيد العبيدي | الملف الشخصي" />
   <meta property="og:description" content="مهتم بالتقنية والذكاء الاصطناعي والتحول الرقمي والتنمية المستدامة." />
@@ -14,7 +19,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
   <style>
@@ -165,7 +170,7 @@
     .section-title { font-size: clamp(1.8rem, 3vw, 2.7rem); margin-top: 5px; }
     .section-desc { color: var(--muted); max-width: 650px; margin-top: 8px; }
 
-    .stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 15px; margin-top: 45px; }
+    .stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; margin-top: 45px; }
     .stat { padding: 22px; border-radius: 20px; text-align: center; }
     .stat-number { font-family: "Space Grotesk", sans-serif; font-size: 2rem; color: var(--primary); font-weight: 700; }
     .stat-label { color: var(--muted); font-size: .82rem; }
@@ -263,7 +268,8 @@
       h1 { letter-spacing: -1px; }
       .hero p { font-size: .95rem; }
       section { padding: 58px 0; }
-      .stats { grid-template-columns: repeat(2, 1fr); }
+      .stats { grid-template-columns: repeat(3, 1fr); }
+      .stats .stat { padding: 14px 6px; } .stat-number { font-size: 1.5rem; } .stat-label { font-size: .72rem; }
       .skills-grid, .projects-grid { grid-template-columns: 1fr; }
       .form-row { grid-template-columns: 1fr; }
       .profile-label { right: -5px; }
@@ -277,6 +283,11 @@
     .ph { aspect-ratio: 4 / 5; border-radius: 24px; display: grid; place-items: center; font-size: 5rem; font-weight: 800; background: linear-gradient(135deg, var(--primary), var(--secondary)); color: #03120e; }
     a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
     @media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; } html { scroll-behavior: auto; } .js .reveal { opacity: 1; transform: none; } }
+      .cert { display: inline-block; margin-top: 6px; color: var(--primary); font-size: .82rem; }
+    .cert:hover { text-decoration: underline; }
+    .copy { background: none; border: 0; color: var(--muted); cursor: pointer; padding: 4px; }
+    .copy:hover { color: var(--primary); }
+    .form-note { color: var(--muted); font-size: .9rem; min-height: 1.4em; }
   </style>
 </head>
 
@@ -288,15 +299,12 @@
         <span class="brand-mark">ر</span>
         <span>رشيد العبيدي</span>
       </a>
-
+      
       <nav class="nav-links" id="navLinks">
-        <a href="#home">الرئيسية</a>
         <a href="#about">نبذة عني</a>
         <a href="#research">الأبحاث</a>
-        <a href="#skills">المهارات</a>
         <a href="#projects">المشاريع</a>
-        <a href="#experience">البرامج والمؤهلات</a>
-        <a href="#volunteering">التطوع والمبادرات</a>
+        <a href="#experience">المسيرة</a>
         <a href="#contact">تواصل معي</a>
       </nav>
 
@@ -333,7 +341,6 @@
             <a class="social" href="https://github.com/rashedalabidi7-beep" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
             <a class="social" href="https://www.linkedin.com/in/rashed-alabidi" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
             <a class="social" href="https://wa.me/967772639165" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
-            <a class="social" href="tel:+967772639165" aria-label="الهاتف"><i class="fa-solid fa-phone"></i></a>
             <a class="social" href="mailto:rashedalabidi7@gmail.com" aria-label="البريد الإلكتروني"><i class="fa-solid fa-envelope"></i></a>
             <a class="social" href="https://orcid.org/0009-0006-7410-5763" target="_blank" rel="noopener" aria-label="ORCID" title="ORCID"><i class="fa-brands fa-orcid"></i></a>
           </div>
@@ -341,7 +348,7 @@
 
         <div class="profile-wrap reveal">
           <div class="profile-card glass">
-            <img src="profile.jpg" alt="الصورة الشخصية لرشيد العبيدي" onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'ph',textContent:'ر'}))">
+            <img src="profile.jpg" alt="الصورة الشخصية لرشيد العبيدي" width="800" height="1000" decoding="async" fetchpriority="high" onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'ph',textContent:'ر'}))">
           </div>
           <div class="profile-label glass">
             <strong>رشيد العبيدي</strong>
@@ -353,10 +360,9 @@
 
     <section class="container">
       <div class="stats">
-        <div class="stat glass reveal"><div class="stat-number" data-target="12">0</div><div class="stat-label">برامج ودورات تطويرية</div></div>
+        <div class="stat glass reveal"><div class="stat-number" data-target="7">0</div><div class="stat-label">برامج وشهادات</div></div>
         <div class="stat glass reveal"><div class="stat-number" data-target="2">0</div><div class="stat-label">أوراق بحثية منشورة</div></div>
         <div class="stat glass reveal"><div class="stat-number" data-target="2">0</div><div class="stat-label">مبادرات تطوعية</div></div>
-        <div class="stat glass reveal"><div class="stat-number" data-target="4">0</div><div class="stat-label">مجالات تقنية متميزة</div></div>
       </div>
     </section>
 
@@ -444,7 +450,7 @@
         <div class="section-head reveal">
           <div class="section-kicker">03 — المهارات والقدرات</div>
           <h2 class="section-title">المهارات التقنية والشخصية</h2>
-          <p class="section-desc">مزيج من المهارات المتقدمة في التكنولوجيا، التحليل، والقيادة.</p>
+          <p class="section-desc">مهارات اكتسبتها من برامج تدريبية ومشاريع عملية في التكنولوجيا والتحليل والقيادة.</p>
         </div>
 
         <div class="skills-grid">
@@ -465,22 +471,22 @@
           <article class="skill-card glass reveal">
             <div class="skill-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
             <h3>البحث العلمي وتحليل المعلومات</h3>
-            <p>البحث الأكاديمي، تحليل البيانات المعقدة، استخدام قواعد البيانات العلمية وأدوات WIPO.</p>
-            <div class="tags"><span class="tag">Research</span><span class="tag">Data Analysis</span></div>
+            <p>البحث الأكاديمي، أساسيات تحليل البيانات، والتعرف على قواعد البيانات العلمية وأدوات WIPO.</p>
+            <div class="tags"><span class="tag">Research</span><span class="tag">Research Tools</span></div>
           </article>
 
           <article class="skill-card glass reveal">
             <div class="skill-icon"><i class="fa-solid fa-bullhorn"></i></div>
             <h3>التسويق والتجارة الإلكترونية</h3>
-            <p>دراسة استراتيجيات التسويق الرقمي وإدارة قنوات التجارة الإلكترونية المعتمدة من Google.</p>
+            <p>دراسة استراتيجيات التسويق الرقمي وأساسيات إدارة قنوات التجارة الإلكترونية (شهادة Google).</p>
             <div class="tags"><span class="tag">Digital Marketing</span><span class="tag">E-commerce</span></div>
           </article>
 
           <article class="skill-card glass reveal">
             <div class="skill-icon"><i class="fa-solid fa-brain"></i></div>
             <h3>التفكير وحل المشكلات</h3>
-            <p>حل المشكلات المعقدة بالاعتماد على البيانات، التفكير التحليلي والقيادة التكيفية.</p>
-            <div class="tags"><span class="tag">Analytical Thinking</span><span class="tag">McKinsey Methodologies</span></div>
+            <p>تعلّم أساليب حل المشكلات بالاعتماد على البيانات، والتفكير التحليلي والقيادة التكيفية.</p>
+            <div class="tags"><span class="tag">Analytical Thinking</span><span class="tag">Problem Solving</span></div>
           </article>
 
           <article class="skill-card glass reveal">
@@ -512,7 +518,7 @@
               <div class="tags"><span class="tag">Web App</span><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
               <div class="project-actions">
                 <a class="btn btn-primary" href="https://rashedalabidi7-beep.github.io/salary-calculator/" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i> عرض المشروع</a>
-                <a class="btn btn-outline" href="https://github.com/rashedalabidi7-beep" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> GitHub</a>
+                <a class="btn btn-outline" href="https://github.com/rashedalabidi7-beep/salary-calculator" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> الكود</a>
               </div>
             </div>
           </article>
@@ -525,21 +531,17 @@
               <div class="tags"><span class="tag">Firebase</span><span class="tag">Google Auth</span><span class="tag">JavaScript</span></div>
               <div class="project-actions">
                 <a class="btn btn-primary" href="https://rashedalabidi7-beep.github.io/masahati/" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i> عرض المشروع</a>
+                <a class="btn btn-outline" href="https://github.com/rashedalabidi7-beep/masahati" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> الكود</a>
               </div>
             </div>
           </article>
 
           <article class="project glass reveal">
-            <div class="project-top"><i class="fa-solid fa-lightbulb"></i></div>
+            <div class="project-top"><i class="fa-solid fa-robot"></i></div>
             <div class="project-body">
-              <h3>أفكار وحلول رقمية مستقبلية</h3>
-              <p>
-                تطوير أفكار لمشاريع في الأتمتة، تنظيم المعرفة، والذكاء الاصطناعي لتقديم محتوى مفيد وصنع أثر رقمي.
-              </p>
-              <div class="tags"><span class="tag">Automation</span><span class="tag">AI</span><span class="tag">Knowledge Management</span></div>
-              <div class="project-actions">
-                <a class="btn btn-outline" href="mailto:rashedalabidi7@gmail.com?subject=استفسار عن المشاريع"><i class="fa-solid fa-envelope"></i> تواصل للاستفسار</a>
-              </div>
+              <h3>وكيل ذكاء اصطناعي شخصي <span class="tag">قيد التطوير</span></h3>
+              <p>وكيل ذكاء اصطناعي شخصي يعمل بأتمتة n8n ويساعدني في مهام الحياة اليومية، أتعلّم من خلاله تصميم الأنظمة الوكيلة.</p>
+              <div class="tags"><span class="tag">n8n</span><span class="tag">AI Agents</span><span class="tag">Automation</span></div>
             </div>
           </article>
         </div>
@@ -557,7 +559,7 @@
         <div class="timeline">
           <div class="timeline-item reveal">
             <div class="date">أغسطس 2026 - الحالي</div>
-            <h3>برنامج الجاهزية المهنية للشباب العربي (مقبول ومحاضر)</h3>
+            <h3>برنامج الجاهزية المهنية للشباب العربي (مشارك مقبول في البرنامج)</h3>
             <p>مبادرة أطلقها <strong>مركز الشباب العربي</strong> بالتعاون مع منصة <strong>LinkedIn Learning</strong> بهدف تمكين الشباب واكتساب مهارات عملية وشهادات مهنية معترف بها وبناء ملفات شخصية احترافية لمواكبة متطلبات سوق العمل (يمتد لمدة 5 أشهر ويشمل 10 مسارات تعليمية وتقنية).</p>
           </div>
           <div class="timeline-item reveal">
@@ -592,8 +594,8 @@
           </div>
         </div>
       </div>
-    </section>
-
+            </section>
+             
     <section id="volunteering">
       <div class="container">
         <div class="section-head reveal">
@@ -630,18 +632,17 @@
        <section id="contact">
       <div class="container">
         <div class="section-head reveal">
-          <div class="section-kicker">07 — التواصل والتطوع</div>
+          <div class="section-kicker">07 — التواصل</div>
           <h2 class="section-title">لنتواصل ونعمل معًا</h2>
           <p class="section-desc">منفتح للتعاون في المشاريع التقنية والفرص التعليمية والتطوعية.</p>
         </div>
 
         <div class="contact-grid">
           <div class="card glass reveal">
-            <h3>معلومات التواصل والتطوع</h3>
-            <p>عضو متطوع في فريق بذرة الخير التطوعي وملتقى شباب قبيلة العبيدي لدعم الطلاب.</p>
+            <h3>معلومات التواصل</h3>
+            <p>يسعدني التواصل معكم للتعاون في المشاريع التقنية والفرص التعليمية.</p>
             <div class="contact-list">
-              <div class="contact-item"><i class="fa-solid fa-envelope"></i><a href="mailto:rashedalabidi7@gmail.com">rashedalabidi7@gmail.com</a></div>
-              <div class="contact-item"><i class="fa-solid fa-phone"></i><a href="tel:+967772639165">+967 772 639 165</a></div>
+              <div class="contact-item"><i class="fa-solid fa-envelope"></i><a href="mailto:rashedalabidi7@gmail.com">rashedalabidi7@gmail.com</a><button class="copy" id="copyMail" type="button" aria-label="نسخ البريد"><i class="fa-regular fa-copy"></i></button></div>
               <div class="contact-item"><i class="fa-solid fa-location-dot"></i><span>حضرموت، اليمن</span></div>
               <div class="contact-item"><i class="fa-brands fa-github"></i><a href="https://github.com/rashedalabidi7-beep" target="_blank" rel="noopener">GitHub</a></div>
               <div class="contact-item"><i class="fa-brands fa-linkedin"></i><a href="https://www.linkedin.com/in/rashed-alabidi" target="_blank" rel="noopener">LinkedIn</a></div>
@@ -749,15 +750,43 @@
 
     document.getElementById("year").textContent = new Date().getFullYear();
 
-    document.getElementById("contactForm").addEventListener("submit", (e) => {
+    // للإرسال المباشر: احصل على مفتاح مجاني من web3forms.com (يصلك على بريدك) وضعه بين علامتي التنصيص
+    const WEB3FORMS_KEY = "";
+    const form = document.getElementById("contactForm");
+    const note = document.createElement("p");
+    note.className = "form-note"; note.setAttribute("role", "status");
+    form.appendChild(note);
+    form.addEventListener("submit", async (e) => {
       e.preventDefault();
-      const subject = encodeURIComponent(e.target.querySelector('input[placeholder="موضوع الرسالة"]').value);
-      const message = encodeURIComponent(
-        "الاسم: " + e.target.querySelector('input[placeholder="الاسم"]').value + "\n" +
-        "البريد: " + e.target.querySelector('input[placeholder="البريد الإلكتروني"]').value + "\n\n" +
-        e.target.querySelector("textarea").value
-      );
-      window.location.href = `mailto:rashedalabidi7@gmail.com?subject=${subject}&body=${message}`;
+      const [n, m, sub] = form.querySelectorAll("input"), msg = form.querySelector("textarea");
+      if (!WEB3FORMS_KEY) {
+        location.href = `mailto:rashedalabidi7@gmail.com?subject=${encodeURIComponent(sub.value)}&body=${encodeURIComponent("الاسم: " + n.value + "\nالبريد: " + m.value + "\n\n" + msg.value)}`;
+        return;
+      }
+      note.textContent = "جارٍ الإرسال...";
+      try {
+        const r = await fetch("https://api.web3forms.com/submit", { method: "POST", headers: { "Content-Type": "application/json", Accept: "application/json" }, body: JSON.stringify({ access_key: WEB3FORMS_KEY, name: n.value, email: m.value, subject: sub.value, message: msg.value }) });
+        if (!(await r.json()).success) throw 0;
+        form.reset(); note.textContent = "تم إرسال رسالتك، شكرًا لك.";
+      } catch (x) { note.textContent = "تعذر الإرسال. راسلني على بريدي مباشرة."; }
+    });
+
+    document.getElementById("copyMail").addEventListener("click", (e) => {
+      const b = e.currentTarget;
+      navigator.clipboard && navigator.clipboard.writeText("rashedalabidi7@gmail.com").then(() => {
+        b.innerHTML = '<i class="fa-solid fa-check"></i>';
+        setTimeout(() => b.innerHTML = '<i class="fa-regular fa-copy"></i>', 1500);
+      });
+    });
+
+    // روابط الشهادات بنفس ترتيب الخط الزمني (من الأحدث إلى الأقدم). اتركها فارغة لإخفاء الرابط.
+    const CERT_LINKS = ["", "", "", "", "", "", ""];
+    document.querySelectorAll(".timeline-item").forEach((it, i) => {
+      if (!CERT_LINKS[i]) return;
+      const a = document.createElement("a");
+      a.className = "cert"; a.href = CERT_LINKS[i]; a.target = "_blank"; a.rel = "noopener";
+      a.innerHTML = '<i class="fa-solid fa-certificate"></i> عرض الشهادة';
+      it.appendChild(a);
     });
   
     const prog = document.getElementById("prog");
@@ -787,4 +816,4 @@
     fetch("cv.pdf", { method: "HEAD" }).then(r => { if (!r.ok) cv.style.display = "none"; }).catch(() => {});
   </script>
 </body>
-</html>
+  </html>
