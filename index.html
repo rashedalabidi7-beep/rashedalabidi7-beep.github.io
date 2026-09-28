@@ -4,6 +4,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="الموقع الشخصي والملف التعريفي لرشيد العبيدي، مهتم بالتقنية والذكاء الاصطناعي والتحول الرقمي والتنمية المستدامة." />
+  <meta name="theme-color" content="#061412" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="رشيد العبيدي | الملف الشخصي" />
+  <meta property="og:description" content="مهتم بالتقنية والذكاء الاصطناعي والتحول الرقمي والتنمية المستدامة." />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%2310b981'/%3E%3Ctext x='32' y='45' font-size='38' text-anchor='middle' fill='%2303120e' font-family='sans-serif' font-weight='700'%3E%D8%B1%3C/text%3E%3C/svg%3E" />
+  <script>document.documentElement.classList.add("js")</script>
   <title>رشيد العبيدي | الملف الشخصي</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -236,8 +242,8 @@
     }
     .back-top.show { opacity: 1; pointer-events: auto; }
 
-    .reveal { opacity: 0; transform: translateY(25px); transition: .7s ease; }
-    .reveal.visible { opacity: 1; transform: translateY(0); }
+    .js .reveal { opacity: 0; transform: translateY(25px); transition: .7s ease; }
+    .js .reveal.visible { opacity: 1; transform: translateY(0); }
 
     @media (max-width: 900px) {
       .nav-links { position: absolute; top: 76px; right: 4%; left: 4%; display: none; flex-direction: column; align-items: stretch; padding: 18px; border-radius: 18px; background: var(--card-strong); border: 1px solid var(--line); }
@@ -263,10 +269,19 @@
       .profile-label { right: -5px; }
       .card, .skill-card { padding: 22px; }
     }
+      .navbar { padding-top: env(safe-area-inset-top, 0px); }
+    #prog { position: fixed; top: 0; inset-inline: 0; height: 3px; transform-origin: right; transform: scaleX(0); background: linear-gradient(90deg, var(--primary), var(--secondary)); z-index: 1001; }
+    .nav-links a.active { color: var(--primary); font-weight: 700; }
+    .roles { margin-top: 10px; font-weight: 600; }
+    #role { color: var(--accent); transition: opacity .3s; }
+    .ph { aspect-ratio: 4 / 5; border-radius: 24px; display: grid; place-items: center; font-size: 5rem; font-weight: 800; background: linear-gradient(135deg, var(--primary), var(--secondary)); color: #03120e; }
+    a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+    @media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; } html { scroll-behavior: auto; } .js .reveal { opacity: 1; transform: none; } }
   </style>
 </head>
 
 <body>
+  <div id="prog"></div>
   <header class="navbar">
     <div class="container nav-inner">
       <a href="#home" class="brand">
@@ -291,19 +306,19 @@
       </div>
     </div>
   </header>
-
-  <main>
+    <main>
     <section class="hero" id="home">
       <div class="container hero-grid">
         <div class="reveal">
           <div class="eyebrow"><span></span> مهتم بالتقنيات الحديثة والذكاء الاصطناعي</div>
           <h1>مرحبًا، أنا <span class="gradient-text">رشيد العبيدي</span></h1>
+          <p class="roles">أعمل في مجال: <b id="role"></b></p>
           <p>
             شغوف بالتكنولوجيا وتطبيقات الذكاء الاصطناعي، وأطمح لتوظيف التكنولوجيا في خدمة التنمية المستدامة وتمكين الشباب. أمتلك خلفية في البحث العلمي الموجه نحو الأثر المجتمعي وأسعى للابتكار الرقمي.
           </p>
 
           <div class="hero-buttons">
-            <a class="btn btn-primary" href="cv.pdf" download>
+            <a class="btn btn-primary" href="cv.pdf" download id="cvBtn">
               <i class="fa-solid fa-file-arrow-down"></i>
               تحميل السيرة الذاتية
             </a>
@@ -316,6 +331,7 @@
           <div class="socials">
             <a class="social" href="https://github.com/rashedalabidi7-beep" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
             <a class="social" href="https://www.linkedin.com/in/rashed-alabidi" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a class="social" href="https://wa.me/967772639165" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
             <a class="social" href="tel:+967772639165" aria-label="الهاتف"><i class="fa-solid fa-phone"></i></a>
             <a class="social" href="mailto:rashedalabidi7@gmail.com" aria-label="البريد الإلكتروني"><i class="fa-solid fa-envelope"></i></a>
             <a class="social" href="https://orcid.org/0009-0006-7410-5763" target="_blank" rel="noopener" aria-label="ORCID" title="ORCID"><i class="fa-brands fa-orcid"></i></a>
@@ -324,7 +340,7 @@
 
         <div class="profile-wrap reveal">
           <div class="profile-card glass">
-            <img src="profile.jpg" alt="الصورة الشخصية لرشيد العبيدي">
+            <img src="profile.jpg" alt="الصورة الشخصية لرشيد العبيدي" onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'ph',textContent:'ر'}))">
           </div>
           <div class="profile-label glass">
             <strong>رشيد العبيدي</strong>
@@ -390,9 +406,7 @@
         <div class="projects-grid">
           <article class="project glass reveal">
             <div class="project-top"><i class="fa-solid fa-book-bookmark"></i></div>
-          <div class="projects-grid">
-          <article class="project glass reveal">
-            <div class="project-top"><i class="fa-solid fa-book-bookmark"></i></div>
+          
             <div class="project-body">
               <h3>دور التكنولوجيا في بناء مجتمعات أكثر وعياً</h3>
               <div class="doi-badge"><i class="fa-solid fa-fingerprint"></i> DOI: 10.5281/zenodo.20088549</div>
@@ -422,9 +436,8 @@
           </article>
         </div>
       </div>
-    </section>
-
-    <section id="skills">
+  </section>
+   <section id="skills">
       <div class="container">
         <div class="section-head reveal">
           <div class="section-kicker">03 — المهارات والقدرات</div>
@@ -498,6 +511,18 @@
               <div class="project-actions">
                 <a class="btn btn-primary" href="https://rashedalabidi7-beep.github.io/salary-calculator/" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i> عرض المشروع</a>
                 <a class="btn btn-outline" href="https://github.com/rashedalabidi7-beep" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> GitHub</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project glass reveal">
+            <div class="project-top"><i class="fa-solid fa-mobile-screen"></i></div>
+            <div class="project-body">
+              <h3>مساحتي: تطبيق شخصي لتنظيم الحياة</h3>
+              <p>تطبيق ويب لإدارة الدراسة والمال والعادات والملاحظات، بتسجيل دخول Google وحفظ سحابي عبر Firebase، ووضع ليلي ونهاري وواجهة عربية وإنجليزية.</p>
+              <div class="tags"><span class="tag">Firebase</span><span class="tag">Google Auth</span><span class="tag">JavaScript</span></div>
+              <div class="project-actions">
+                <a class="btn btn-primary" href="https://rashedalabidi7-beep.github.io/masahati/" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i> عرض المشروع</a>
               </div>
             </div>
           </article>
@@ -600,7 +625,7 @@
         </div>
       </div>
     </section>
-       <section id="contact">
+      <section id="contact">
       <div class="container">
         <div class="section-head reveal">
           <div class="section-kicker">07 — التواصل والتطوع</div>
@@ -655,6 +680,7 @@
 
     menuBtn.addEventListener("click", () => {
       navLinks.classList.toggle("open");
+      menuBtn.setAttribute("aria-expanded", navLinks.classList.contains("open"));
       menuBtn.innerHTML = navLinks.classList.contains("open")
         ? '<i class="fa-solid fa-xmark"></i>'
         : '<i class="fa-solid fa-bars"></i>';
@@ -667,7 +693,8 @@
       });
     });
 
-    const savedTheme = localStorage.getItem("theme");
+    const ls = { get: k => { try { return localStorage.getItem(k); } catch (e) { return null; } }, set: (k, v) => { try { localStorage.setItem(k, v); } catch (e) {} } };
+    const savedTheme = ls.get("theme") || (matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark");
     if (savedTheme === "light") {
       document.body.classList.add("light");
       themeBtn.innerHTML = '<i class="fa-solid fa-moon"></i>';
@@ -676,7 +703,7 @@
     themeBtn.addEventListener("click", () => {
       document.body.classList.toggle("light");
       const light = document.body.classList.contains("light");
-      localStorage.setItem("theme", light ? "light" : "dark");
+      ls.set("theme", light ? "light" : "dark");
       themeBtn.innerHTML = light
         ? '<i class="fa-solid fa-moon"></i>'
         : '<i class="fa-solid fa-sun"></i>';
@@ -730,6 +757,32 @@
       );
       window.location.href = `mailto:rashedalabidi7@gmail.com?subject=${subject}&body=${message}`;
     });
+  
+    const prog = document.getElementById("prog");
+    addEventListener("scroll", () => {
+      const m = document.documentElement.scrollHeight - innerHeight;
+      prog.style.transform = "scaleX(" + (m > 0 ? scrollY / m : 0) + ")";
+    }, { passive: true });
+
+    const links = [...document.querySelectorAll(".nav-links a")];
+    const spy = new IntersectionObserver(es => es.forEach(e => {
+      if (e.isIntersecting) links.forEach(a => a.classList.toggle("active", a.getAttribute("href") === "#" + e.target.id));
+    }), { rootMargin: "-40% 0px -55% 0px" });
+    document.querySelectorAll("main section[id]").forEach(x => spy.observe(x));
+
+    const roles = ["الذكاء الاصطناعي", "التحول الرقمي", "إدارة المعرفة", "البحث العلمي", "التنمية المستدامة"];
+    const role = document.getElementById("role");
+    let ri = 0;
+    role.textContent = roles[0];
+    if (!matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      setInterval(() => {
+        role.style.opacity = 0;
+        setTimeout(() => { ri = (ri + 1) % roles.length; role.textContent = roles[ri]; role.style.opacity = 1; }, 300);
+      }, 2400);
+    }
+
+    const cv = document.getElementById("cvBtn");
+    fetch("cv.pdf", { method: "HEAD" }).then(r => { if (!r.ok) cv.style.display = "none"; }).catch(() => {});
   </script>
 </body>
 </html>
