@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#101827"><meta name="description" content="Problem Solver Lab — مختبر تعلم حل المشكلات ومفاهيم البرمجة">
+  <title>Problem Solver Lab</title><link rel="manifest" href="manifest.json"><link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="brand"><div class="brand-mark">⌘</div><div><strong>Problem Solver</strong><small>LAB · LEARN BY SOLVING</small></div></div>
+      <nav class="nav" aria-label="التنقل الرئيسي">
+        <button class="nav-item active" data-page="home"><span>⌂</span> الرئيسية</button>
+        <button class="nav-item" data-page="learn"><span>▤</span> مسار التعلم</button>
+        <button class="nav-item" data-page="practice"><span>⌘</span> حل المسائل</button>
+        <button class="nav-item" data-page="quiz"><span>✓</span> اختبر نفسك</button>
+        <button class="nav-item" data-page="progress"><span>◷</span> تقدمي</button>
+      </nav>
+      <div class="sidebar-note"><span class="live-dot"></span><div><b>وضع التعلم</b><small>تقدمك محفوظ على جهازك</small></div></div>
+      <div class="sidebar-footer">نسخة أولية 0.1 · تعمل محليًا</div>
+    </aside>
+    <main class="main">
+      <header class="topbar"><button id="menuToggle" class="icon-btn mobile-only" aria-label="فتح القائمة">☰</button><div class="crumb">مساحة التعلم <span>/</span> <b id="pageCrumb">الرئيسية</b></div><div class="top-actions"><span class="offline-chip"><i></i> جاهز للتعلم</span><button id="themeToggle" class="icon-btn" aria-label="تبديل المظهر">☼</button></div></header>
+      <div id="view" class="view" tabindex="-1"></div>
+      <footer class="footer">تعلّم الفكرة، صمّم الحل، ثم اكتب الكود. <span>Problem Solver Lab</span></footer>
+    </main>
+  </div>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script src="app.js"></script>
+</body></html>
