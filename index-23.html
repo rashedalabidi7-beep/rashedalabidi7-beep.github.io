@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="الموقع الشخصي والملف التعريفي لرشيد العبيدي، مهتم بالتقنية والذكاء الاصطناعي والتحول الرقمي والتنمية المستدامة." />
+  <meta name="theme-color" content="#10161F" />
+  <link rel="canonical" href="https://rashedalabidi7-beep.github.io/" />
+  <meta property="og:url" content="https://rashedalabidi7-beep.github.io/" />
+  <meta property="og:image" content="https://rashedalabidi7-beep.github.io/profile.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"رشيد العبيدي","alternateName":"Rashed Alabidi","url":"https://rashedalabidi7-beep.github.io/","image":"https://rashedalabidi7-beep.github.io/profile.jpg","sameAs":["https://github.com/rashedalabidi7-beep","https://www.linkedin.com/in/rashed-alabidi","https://orcid.org/0009-0006-7410-5763"],"address":{"@type":"PostalAddress","addressRegion":"حضرموت","addressCountry":"YE"}}</script>
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="رشيد العبيدي | الملف الشخصي" />
+  <meta property="og:description" content="مهتم بالتقنية والذكاء الاصطناعي والتحول الرقمي والتنمية المستدامة." />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23CC7A52'/%3E%3Cstop offset='1' stop-color='%234FB3C7'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='16' fill='url(%23g)'/%3E%3Ctext x='32' y='45' font-size='38' text-anchor='middle' fill='%23ffffff' font-family='sans-serif' font-weight='700'%3E%D8%B1%3C/text%3E%3C/svg%3E" />
+  <script>document.documentElement.classList.add("js");
+    function phFallback(i){var d=document.createElement("div");d.className="ph";d.innerHTML='<svg viewBox="0 0 200 250" aria-hidden="true"><circle cx="100" cy="92" r="40" fill="currentColor"/><path d="M22 250c0-58 36-94 78-94s78 36 78 94z" fill="currentColor"/></svg>';i.replaceWith(d)}
+  </script>
+  <title>رشيد العبيدي | الملف الشخصي</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Cairo:wght@400;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+  <style>
+    :root {
+      --bg: #10161F;
+      --bg-soft: #151C27;
+      --ink: #F3EEE4;
+      --ink-dim: #9CA3AE;
+      --line: rgba(243, 238, 228, 0.09);
+      --card: #182029;
+      --accent: #CC7A52;
+      --accent-2: #4FB3C7;
+      --on-accent: #10161F;
+      --shadow: 0 24px 50px rgba(0, 0, 0, 0.5);
+      --r: 20px;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: "IBM Plex Sans Arabic", "Cairo", sans-serif;
+      background: var(--bg);
+      color: var(--ink);
+      line-height: 1.9;
+      overflow-x: hidden;
+    }
+    ::selection { background: var(--accent); color: #fff; }
+    a { color: inherit; text-decoration: none; }
+    button, a { -webkit-tap-highlight-color: transparent; }
+    .container { width: min(1120px, 90%); margin: auto; }
+    .mono { font-family: "Space Grotesk", sans-serif; }
+    .gradient-text { background: linear-gradient(90deg, var(--accent), var(--accent-2)); -webkit-background-clip: text; background-clip: text; color: transparent; }
+
+    /* nav */
+    .navbar { position: fixed; inset: 0 0 auto 0; z-index: 1000; background: color-mix(in srgb, var(--bg) 75%, transparent); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border-bottom: 1px solid var(--line); }
+    .nav-inner { min-height: 76px; display: flex; align-items: center; justify-content: space-between; gap: 20px; }
+    .brand { display: flex; align-items: center; gap: 10px; font-weight: 800; font-size: 1.05rem; letter-spacing: .3px; }
+    .brand-mark { width: 38px; height: 38px; border-radius: 12px; background: linear-gradient(135deg, var(--accent), var(--accent-2)); display: grid; place-items: center; color: #fff; font-weight: 800; font-size: .9rem; }
+    .nav-links { display: flex; align-items: center; gap: 4px; background: var(--card); border: 1px solid var(--line); border-radius: 999px; padding: 6px; }
+    .nav-links a { position: relative; color: var(--ink-dim); font-size: .85rem; padding: 9px 16px; border-radius: 999px; transition: .2s; font-weight: 600; }
+    .nav-links a:hover, .nav-links a.active { color: #fff; background: linear-gradient(135deg, var(--accent), var(--accent-2)); }
+    .nav-actions { display: flex; gap: 8px; }
+    .icon-btn { border: 1px solid var(--line); background: var(--card); color: var(--ink); width: 42px; height: 42px; border-radius: 12px; cursor: pointer; transition: .2s; display: grid; place-items: center; }
+    .icon-btn:hover { border-color: var(--accent); color: var(--accent); }
+    .menu-btn { display: none; }
+
+    /* hero */
+    .hero { padding: 160px 0 90px; min-height: 640px; display: flex; align-items: center; position: relative; }
+    .hero::before { content: ""; position: absolute; inset: 0; z-index: -1; pointer-events: none;
+      background: radial-gradient(50% 40% at 85% 8%, color-mix(in srgb, var(--accent) 22%, transparent), transparent 70%),
+                  radial-gradient(40% 35% at 10% 90%, color-mix(in srgb, var(--accent-2) 14%, transparent), transparent 70%); }
+    .hero-grid { display: grid; grid-template-columns: 1.1fr .9fr; gap: 56px; align-items: center; }
+    .eyebrow { display: inline-flex; align-items: center; gap: 10px; color: var(--accent); font-size: .84rem; font-weight: 700; margin-bottom: 20px; background: color-mix(in srgb, var(--accent) 14%, transparent); padding: 8px 16px; border-radius: 999px; }
+    h1 { font-family: "IBM Plex Sans Arabic", "Cairo", sans-serif; font-weight: 800; font-size: clamp(2.3rem, 5.6vw, 4.2rem); line-height: 1.3; margin-bottom: 18px; }
+    .hero p { color: var(--ink-dim); max-width: 580px; font-size: 1.04rem; }
+    .roles { margin-top: 14px; font-weight: 600; font-size: 1.08rem; }
+    #role { color: var(--accent); transition: opacity .3s; font-family: "Space Grotesk", sans-serif; }
+    .hero-buttons { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 34px; }
+    .btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; border-radius: 14px; padding: 14px 26px; border: 1px solid var(--line); font-weight: 700; font-size: .9rem; transition: .25s; cursor: pointer; font-family: inherit; }
+    .btn-primary { background: linear-gradient(135deg, var(--accent), var(--accent-2)); color: #fff; border: none; box-shadow: 0 14px 30px -10px color-mix(in srgb, var(--accent) 60%, transparent); }
+    .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 18px 36px -10px color-mix(in srgb, var(--accent) 70%, transparent); }
+    .btn-outline { background: var(--card); color: var(--ink); }
+    .btn-outline:hover { border-color: var(--accent); color: var(--accent); }
+    .btn.alt { background: var(--card); color: var(--ink); }
+    .socials { display: flex; gap: 10px; margin-top: 32px; }
+    .social { width: 44px; height: 44px; display: grid; place-items: center; border-radius: 14px; background: var(--card); border: 1px solid var(--line); color: var(--ink-dim); transition: .2s; }
+    .social:hover { color: #fff; background: linear-gradient(135deg, var(--accent), var(--accent-2)); border-color: transparent; transform: translateY(-2px); }
+
+    .profile-wrap { position: relative; width: min(320px, 100%); margin: auto; }
+    .profile-wrap::before { content: ""; position: absolute; inset: -18px; z-index: 0; border-radius: 32px;
+      background: linear-gradient(135deg, color-mix(in srgb, var(--accent) 35%, transparent), color-mix(in srgb, var(--accent-2) 30%, transparent));
+      filter: blur(18px); opacity: .7; }
+    .profile-card { position: relative; z-index: 1; border-radius: 28px; overflow: hidden; box-shadow: var(--shadow); border: 1px solid var(--line); }
+    .profile-card img, .ph { display: block; width: 100%; aspect-ratio: 1 / 1; object-fit: cover; object-position: center top; }
+    .ph { background: color-mix(in srgb, var(--accent) 18%, var(--card)); color: var(--accent); display: grid; place-items: center; }
+    .ph svg { width: 48%; opacity: .85; }
+    .profile-label { position: absolute; z-index: 2; bottom: -6px; left: 50%; transform: translateX(-50%); padding: 12px 22px; background: var(--card); border: 1px solid var(--line); border-radius: 16px; box-shadow: var(--shadow); white-space: nowrap; }
+    .profile-label strong { font-size: .92rem; color: var(--accent); font-family: "Space Grotesk", sans-serif; }
+    .profile-label small { color: var(--ink-dim); font-size: .76rem; margin-inline-start: 6px; }
+    .chip { position: absolute; z-index: 3; display: flex; align-items: center; gap: 8px; padding: 9px 15px; font-size: .76rem; font-weight: 700; white-space: nowrap; background: var(--card); border: 1px solid var(--line); border-radius: 14px; box-shadow: var(--shadow); }
+    .chip i { color: var(--accent); }
+    .chip.c1 { top: 4px; right: -6px; }
+    .chip.c2 { top: 46%; left: -32px; }
+    .chip.c3 { bottom: 54px; left: 2px; }
+    @media (max-width: 600px) { .chip.c1 { right: 0; } .chip.c2 { left: -4px; } .chip.c3 { left: 10px; } }
+
+    /* sections */
+    section { padding: 86px 0; position: relative; }
+    .section-head { margin-bottom: 40px; max-width: 640px; }
+    .section-kicker { display: inline-block; font-size: .78rem; font-weight: 700; color: var(--accent); background: color-mix(in srgb, var(--accent) 14%, transparent); padding: 6px 14px; border-radius: 999px; margin-bottom: 14px; }
+    .section-title { font-family: "IBM Plex Sans Arabic", "Cairo", sans-serif; font-size: clamp(1.6rem, 3vw, 2.2rem); font-weight: 800; }
+    .section-desc { color: var(--ink-dim); margin-top: 10px; font-size: .97rem; }
+
+    .stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+    .stat { padding: 28px 10px; text-align: center; background: var(--card); border: 1px solid var(--line); border-radius: var(--r); }
+    .stat-number { font-family: "Space Grotesk", sans-serif; font-size: 2.1rem; color: var(--accent); font-weight: 700; }
+    .stat-label { color: var(--ink-dim); font-size: .78rem; margin-top: 4px; }
+
+    .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+    .card { padding: 32px; background: var(--card); border: 1px solid var(--line); border-radius: var(--r); }
+    .card h3 { margin-bottom: 14px; font-size: 1.15rem; font-weight: 700; display: flex; align-items: center; gap: 10px; }
+    .card h3 i { color: var(--accent); background: color-mix(in srgb, var(--accent) 16%, transparent); width: 36px; height: 36px; border-radius: 12px; display: inline-grid; place-items: center; font-size: .85rem; }
+    .card p { color: var(--ink-dim); }
+    .quote { position: relative; margin-top: 20px; color: var(--ink); font-style: italic; padding: 18px 22px; background: color-mix(in srgb, var(--accent) 8%, transparent); border-radius: 16px; border-inline-start: 3px solid var(--accent); }
+
+    /* bento skills grid */
+    .skillbars { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+    .skillbar-card { background: var(--card); border: 1px solid var(--line); border-radius: var(--r); padding: 26px; }
+    .skillrow { margin-bottom: 16px; }
+    .skillrow:last-child { margin-bottom: 0; }
+    .skillrow .top { display: flex; justify-content: space-between; font-size: .9rem; margin-bottom: 7px; }
+    .skillrow .meta { color: var(--ink-dim); font-size: .78rem; }
+    .skillbar-track { height: 8px; background: var(--bg-soft); border-radius: 999px; overflow: hidden; }
+    .skillbar-fill { display: block; height: 100%; background: linear-gradient(90deg, var(--accent), var(--accent-2)); border-radius: 999px; }
+    .proj-filters { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 24px; }
+    .proj-filter { background: var(--card); border: 1px solid var(--line); border-radius: 999px; padding: 8px 18px; font-size: .84rem; font-weight: 700; color: var(--ink-dim); cursor: pointer; font-family: inherit; }
+    .proj-filter.active { color: #fff; background: linear-gradient(135deg, var(--accent), var(--accent-2)); border-color: transparent; }
+    .project.hide { display: none; }
+    .skills-grid { display: grid; grid-template-columns: repeat(6, 1fr); gap: 16px; }
+    .skill-card { padding: 28px; background: var(--card); border: 1px solid var(--line); border-radius: var(--r); transition: .25s; grid-column: span 3; }
+    .skill-card:nth-child(1), .skill-card:nth-child(4) { grid-column: span 4; }
+    .skill-card:nth-child(2), .skill-card:nth-child(5) { grid-column: span 2; }
+    .skill-card:nth-child(3) { grid-column: span 3; }
+    .skill-card:nth-child(6) { grid-column: span 3; }
+    .skill-card:hover { transform: translateY(-4px); box-shadow: var(--shadow); border-color: color-mix(in srgb, var(--accent) 40%, var(--line)); }
+    .skill-icon { width: 48px; height: 48px; background: linear-gradient(135deg, color-mix(in srgb, var(--accent) 24%, transparent), color-mix(in srgb, var(--accent-2) 20%, transparent)); display: grid; place-items: center; color: var(--accent); font-size: 1.15rem; margin-bottom: 18px; border-radius: 14px; }
+    .skill-card h3 { font-size: 1.02rem; margin-bottom: 8px; font-weight: 700; }
+    .skill-card p { color: var(--ink-dim); font-size: .88rem; }
+    .tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px; }
+    .tag { color: var(--ink-dim); border: 1px solid var(--line); padding: 5px 13px; border-radius: 999px; font-size: .72rem; font-family: "Space Grotesk", sans-serif; }
+
+    .projects-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; }
+    .project { background: var(--card); border: 1px solid var(--line); border-radius: var(--r); overflow: hidden; transition: .25s; }
+    .project:hover { transform: translateY(-4px); box-shadow: var(--shadow); border-color: color-mix(in srgb, var(--accent) 40%, var(--line)); }
+    .project-top { height: 8px; background: linear-gradient(90deg, var(--accent), var(--accent-2)); }
+    .project-body { padding: 28px; }
+    .project-body h3 { margin-bottom: 10px; font-size: 1.08rem; font-weight: 700; }
+    .project-body p { color: var(--ink-dim); font-size: .9rem; }
+    .project-actions { display: flex; gap: 10px; margin-top: 20px; flex-wrap: wrap; }
+
+    .doi-badge { display: inline-flex; align-items: center; gap: 6px; border: 1px solid var(--line); padding: 5px 13px; border-radius: 999px; font-size: .76rem; color: var(--accent); font-family: "Space Grotesk", sans-serif; margin-top: 6px; margin-bottom: 8px; }
+
+    .timeline { position: relative; display: grid; gap: 14px; }
+    .timeline-item { position: relative; background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 22px 24px; border-inline-start: 3px solid var(--accent); }
+    .timeline-item h3 { font-size: 1rem; font-weight: 700; }
+    .timeline-item .date { color: var(--accent); font-size: .76rem; font-family: "Space Grotesk", sans-serif; font-weight: 700; }
+    .timeline-item p { color: var(--ink-dim); font-size: .88rem; margin-top: 6px; }
+
+    .volunteer-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; }
+    .volunteer-grid > * { background: var(--card); border: 1px solid var(--line); border-radius: var(--r); padding: 28px; }
+
+    .contact-grid { display: grid; grid-template-columns: .8fr 1.2fr; gap: 18px; }
+    .contact-grid > * { background: var(--card); border: 1px solid var(--line); border-radius: var(--r); padding: 32px; }
+    .contact-list { display: grid; gap: 14px; margin-top: 20px; }
+    .contact-item { display: flex; align-items: center; gap: 13px; color: var(--ink-dim); }
+    .contact-item i { color: var(--accent); width: 34px; height: 34px; background: color-mix(in srgb, var(--accent) 14%, transparent); border-radius: 12px; display: inline-grid; place-items: center; font-size: .85rem; }
+    .contact-item a:hover { color: var(--accent); }
+    form { display: grid; gap: 14px; }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+    input, textarea { width: 100%; border: 1px solid var(--line); background: var(--bg-soft); border-radius: 14px; color: var(--ink); padding: 13px 16px; font: inherit; outline: none; color-scheme: dark; }
+    input:focus, textarea:focus { border-color: var(--accent); }
+    textarea { min-height: 130px; resize: vertical; }
+
+    footer { padding: 34px 0; color: var(--ink-dim); text-align: center; font-size: .85rem; }
+    .back-top { position: fixed; left: 22px; bottom: 22px; width: 44px; height: 44px; border: 1px solid var(--line); background: var(--card); color: var(--ink); border-radius: 14px; cursor: pointer; opacity: 0; pointer-events: none; transition: .25s; z-index: 50; box-shadow: var(--shadow); }
+    .back-top.show { opacity: 1; pointer-events: auto; }
+    .back-top:hover { border-color: var(--accent); color: var(--accent); }
+
+    #prog { position: fixed; top: 0; inset-inline: 0; height: 3px; transform-origin: right; transform: scaleX(0); background: linear-gradient(90deg, var(--accent), var(--accent-2)); z-index: 1001; }
+    body[dir="ltr"] #prog { transform-origin: left; }
+    .cert { display: inline-block; margin-top: 6px; color: var(--accent); font-size: .8rem; }
+    .cert:hover { text-decoration: underline; }
+    .copy { background: none; border: 0; color: var(--ink-dim); cursor: pointer; padding: 4px; }
+    .copy:hover { color: var(--accent); }
+    .form-note { color: var(--ink-dim); font-size: .88rem; min-height: 1.4em; }
+
+    .js .reveal { opacity: 0; transform: translateY(18px); transition: .6s ease; }
+    .js .reveal.visible { opacity: 1; transform: translateY(0); }
+
+    a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+    @media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; } html { scroll-behavior: auto; } .js .reveal { opacity: 1; transform: none; } }
+
+    @media (max-width: 900px) {
+      .nav-links { position: absolute; top: 76px; right: 4%; left: 4%; display: none; flex-direction: column; align-items: stretch; gap: 4px; padding: 10px; background: var(--card); border: 1px solid var(--line); border-radius: 18px; }
+      .nav-links.open { display: flex; }
+      .nav-links a { padding: 12px 14px; border-radius: 12px; }
+      .menu-btn { display: grid; }
+      .hero-grid, .about-grid, .contact-grid, .volunteer-grid, .projects-grid { grid-template-columns: 1fr; }
+      .skills-grid { grid-template-columns: repeat(2, 1fr); }
+      .skill-card, .skill-card:nth-child(1), .skill-card:nth-child(2), .skill-card:nth-child(3), .skill-card:nth-child(4), .skill-card:nth-child(5), .skill-card:nth-child(6) { grid-column: span 1; }
+      .hero { padding-top: 120px; }
+      .profile-wrap { max-width: 300px; margin-top: 44px; }
+    }
+    @media (max-width: 600px) {
+      .nav-inner { min-height: 68px; }
+      .hero { padding-bottom: 50px; }
+      section { padding: 58px 0; }
+      .skills-grid { grid-template-columns: 1fr; }
+      .stats { grid-template-columns: repeat(3, 1fr); gap: 10px; }
+      .stat { padding: 18px 6px; } .stat-number { font-size: 1.4rem; } .stat-label { font-size: .68rem; }
+      .form-row { grid-template-columns: 1fr; }
+      .card, .skill-card, .project-body, .contact-grid > *, .volunteer-grid > * { padding: 22px; }
+    }
+  </style>
+</head>
+
+<body>
+  <div id="prog"></div>
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a href="#home" class="brand">
+        <span class="brand-mark">ر</span>
+        <span>رشيد العبيدي</span>
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#about">نبذة عني</a>
+        <a href="#research">الأبحاث</a>
+        <a href="#projects">المشاريع</a>
+        <a href="#experience">المسيرة</a>
+        <a href="#contact">تواصل معي</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="icon-btn menu-btn" id="menuBtn" aria-label="فتح القائمة"><i class="fa-solid fa-bars"></i></button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div class="reveal">
+          <div class="eyebrow"><span></span> مهتم بالتقنيات الحديثة والذكاء الاصطناعي</div>
+          <h1>مرحبًا، أنا <span class="gradient-text">رشيد العبيدي</span></h1>
+          <p class="roles">أعمل في مجال: <b id="role"></b></p>
+          <p>
+            شغوف بالتكنولوجيا وتطبيقات الذكاء الاصطناعي، وأطمح لتوظيف التكنولوجيا في خدمة التنمية المستدامة وتمكين الشباب. أمتلك خلفية في البحث العلمي الموجه نحو الأثر المجتمعي وأسعى للابتكار الرقمي.
+          </p>
+         <div class="hero-buttons">
+            <a class="btn btn-primary" href="cv.pdf" download id="cvBtn">
+              <i class="fa-solid fa-file-arrow-down"></i>
+              تحميل السيرة الذاتية
+            </a>
+            <a class="btn btn-outline" href="#projects">
+              <i class="fa-solid fa-code"></i>
+              استكشف مشاريعي
+            </a>
+          </div>
+
+          <div class="socials">
+            <a class="social" href="https://github.com/rashedalabidi7-beep" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a class="social" href="https://www.linkedin.com/in/rashed-alabidi" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a class="social" href="https://wa.me/967772639165" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+            <a class="social" href="mailto:rashedalabidi7@gmail.com" aria-label="البريد الإلكتروني"><i class="fa-solid fa-envelope"></i></a>
+            <a class="social" href="https://orcid.org/0009-0006-7410-5763" target="_blank" rel="noopener" aria-label="ORCID" title="ORCID"><i class="fa-brands fa-orcid"></i></a>
+          </div>
+        </div>
+
+        <div class="profile-wrap reveal">
+          <div class="profile-card glass">
+            <img src="profile.jpg" alt="الصورة الشخصية لرشيد العبيدي" width="800" height="1000" decoding="async" fetchpriority="high" onerror="phFallback(this)">
+          </div>
+          <div class="chip glass c1"><i class="fa-solid fa-robot"></i> الذكاء الاصطناعي</div>
+          <div class="chip glass c2"><i class="fa-solid fa-book-open"></i> البحث العلمي</div>
+          <div class="chip glass c3"><i class="fa-solid fa-leaf"></i> التنمية المستدامة</div>
+          <div class="profile-label glass">
+            <strong>رشيد العبيدي</strong>
+            <small><i class="fa-solid fa-location-dot"></i> حضرموت، اليمن</small>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container">
+      <div class="stats">
+        <div class="stat glass reveal"><div class="stat-number" data-target="7">0</div><div class="stat-label">برامج وشهادات</div></div>
+        <div class="stat glass reveal"><div class="stat-number" data-target="2">0</div><div class="stat-label">أوراق بحثية منشورة</div></div>
+        <div class="stat glass reveal"><div class="stat-number" data-target="2">0</div><div class="stat-label">مبادرات تطوعية</div></div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="section-kicker">01 — نبذة شخصية</div>
+          <h2 class="section-title">من أنا؟ وما الذي أسعى إليه؟</h2>
+          <p class="section-desc">أؤمن بأن التقنية والبحث العلمي الموجه هما الأساس لصناعة الفرص وخدمة المجتمع بشكل مستدام.</p>
+        </div>
+
+        <div class="about-grid">
+          <article class="card glass reveal">
+            <h3><i class="fa-solid fa-user-astronaut gradient-text"></i> نبذة عني</h3>
+            <p>
+              أنا رشيد العبيدي، طالب تقنية معلومات في جامعة الأحقاف بمدينة المكلا، حضرموت.
+              أمتلك شغفاً بالذكاء الاصطناعي، التحول الرقمي، وإدارة المعرفة، بالإضافة إلى الخبرة في المبادرات والأنشطة التطوعية.
+            </p>
+            <p class="quote">
+              أسعى لاستغلال مهاراتي الرقمية للمساهمة في ابتكار حلول تدعم التعليم وتصنع تغييراً إيجابياً ومستداماً.
+            </p>
+          </article>
+
+          <article class="card glass reveal">
+            <h3><i class="fa-solid fa-bullseye gradient-text"></i> رؤيتي والهدف</h3>
+            <p>
+              توظيف التكنولوجيا الحديثة وأدوات الذكاء الاصطناعي في تمكين الشباب وبناء حلول معلوماتية تدعم التنمية المستدامة برؤية عالمية.
+            </p>
+            <div class="tags">
+              <span class="tag">الذكاء الاصطناعي الوكيلي</span>
+              <span class="tag">إدارة المعرفة</span>
+              <span class="tag">التنمية المستدامة (SDGs)</span>
+              <span class="tag">البحث العلمي</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="research">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="section-kicker">02 — الأبحاث والأوراق العلمية</div>
+          <h2 class="section-title">النتاج البحثي والمعرفي</h2>
+          <p class="section-desc">أوراق بحثية منشورة على منصة Zenodo تسلط الضوء على دور التقنية والشباب في الوعي والتنمية المجتمعية.</p>
+        </div>
+
+        <div class="projects-grid">
+          <article class="project glass reveal">
+            <div class="project-top"><i class="fa-solid fa-book-bookmark"></i></div>
+          
+            <div class="project-body">
+              <h3>دور التكنولوجيا في بناء مجتمعات أكثر وعياً</h3>
+              <div class="doi-badge"><i class="fa-solid fa-fingerprint"></i> DOI: 10.5281/zenodo.20088549</div>
+              <p>
+                ورقة بحثية (مايو 2026) تستعرض دور المنصات الرقمية الحديثة والتعليم الإلكتروني في دعم التحول المعرفي وخدمة قضايا التنمية المجتمعية.
+              </p>
+                    <div class="tags"><span class="tag">التحول المعرفي</span><span class="tag">التعليم الرقمي</span><span class="tag">البحث العلمي</span></div>
+              <div class="project-actions">
+                <a class="btn btn-primary" href="https://doi.org/10.5281/zenodo.20088549" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i> عرض الورقة البحثية</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project glass reveal">
+            <div class="project-top"><i class="fa-solid fa-users-gear"></i></div>
+            <div class="project-body">
+              <h3>دور الشباب في تعزيز التنمية المجتمعية باستخدام التكنولوجيا</h3>
+              <div class="doi-badge"><i class="fa-solid fa-fingerprint"></i> DOI: 10.5281/zenodo.17839145</div>
+              <p>
+                ورقة بحثية (ديسمبر 2025) تسلط الضوء على آليات تمكين الشباب عبر الابتكار الرقمي وبناء المهارات التكنولوجية لضمان تنمية مستدامة.
+              </p>
+              <div class="tags"><span class="tag">تمكين الشباب</span><span class="tag">الابتكار الرقمي</span><span class="tag">التنمية المستدامة</span></div>
+              <div class="project-actions">
+                <a class="btn btn-primary" href="https://doi.org/10.5281/zenodo.17839145" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i> عرض الورقة البحثية</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="section-kicker">03 — المهارات والقدرات</div>
+          <h2 class="section-title">المهارات التقنية والشخصية</h2>
+          <p class="section-desc">مهارات اكتسبتها من برامج تدريبية ومشاريع عملية في التكنولوجيا والتحليل والقيادة.</p>
+        </div>
+
+        <div class="skills-grid">
+          <article class="skill-card glass reveal">
+            <div class="skill-icon"><i class="fa-solid fa-robot"></i></div>
+            <h3>الذكاء الاصطناعي والبيانات</h3>
+            <p>أساسيات الذكاء الاصطناعي التوليدي، تصميم الأنظمة الوكيلة (Agentic Systems)، وتسمية وتصنيف البيانات.</p>
+            <div class="tags"><span class="tag">AI Basics</span><span class="tag">Agentic AI</span><span class="tag">Data Annotation</span></div>
+          </article>
+
+          <article class="skill-card glass reveal">
+            <div class="skill-icon"><i class="fa-solid fa-network-wired"></i></div>
+            <h3>التحول الرقمي والبنية التحتية</h3>
+            <p>فهم أطر الهويات الرقمية والمدفوعات لتعزيز الشمول الرقمي والبنية التحتية العامة.</p>
+            <div class="tags"><span class="tag">Public Digital Infra</span><span class="tag">Digital Transformation</span></div>
+          </article>
+
+          <article class="skill-card glass reveal">
+            <div class="skill-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+            <h3>البحث العلمي وتحليل المعلومات</h3>
+            <p>البحث الأكاديمي، أساسيات تحليل البيانات، والتعرف على قواعد البيانات العلمية وأدوات WIPO.</p>
+            <div class="tags"><span class="tag">Research</span><span class="tag">Research Tools</span></div>
+          </article>
+
+          <article class="skill-card glass reveal">
+            <div class="skill-icon"><i class="fa-solid fa-bullhorn"></i></div>
+            <h3>التسويق والتجارة الإلكترونية</h3>
+            <p>دراسة استراتيجيات التسويق الرقمي وأساسيات إدارة قنوات التجارة الإلكترونية (شهادة Google).</p>
+            <div class="tags"><span class="tag">Digital Marketing</span><span class="tag">E-commerce</span></div>
+          </article>
+
+          <article class="skill-card glass reveal">
+            <div class="skill-icon"><i class="fa-solid fa-brain"></i></div>
+            <h3>التفكير وحل المشكلات</h3>
+            <p>تعلّم أساليب حل المشكلات بالاعتماد على البيانات، والتفكير التحليلي والقيادة التكيفية.</p>
+            <div class="tags"><span class="tag">Analytical Thinking</span><span class="tag">Problem Solving</span></div>
+          </article>
+
+          <article class="skill-card glass reveal">
+            <div class="skill-icon"><i class="fa-solid fa-handshake"></i></div>
+            <h3>القيادة والتواصل</h3>
+            <p>القيادة، الاتصال الفعال، العمل الجماعي التشاركي، وإدارة الوقت والتعلم المستمر.</p>
+            <div class="tags"><span class="tag">Adaptive Leadership</span><span class="tag">Communication</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="tools">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="section-kicker">03.5 — الأدوات والتقنيات</div>
+          <h2 class="section-title">ما أعمل به فعليًا</h2>
+          <p class="section-desc">مستوى الاستخدام مبني على مشاريعي الفعلية، وليس تقييمًا ذاتيًا.</p>
+        </div>
+
+        <div class="skillbars">
+          <div class="skillbar-card reveal">
+            <div class="skillrow">
+              <div class="top"><span>HTML / CSS / JavaScript</span><span class="meta">عملي — حاسبة الراتب، مساحتي</span></div>
+              <div class="skillbar-track"><span class="skillbar-fill" style="width:85%"></span></div>
+            </div>
+            <div class="skillrow">
+              <div class="top"><span>Firebase (Auth + Firestore)</span><span class="meta">عملي — مساحتي</span></div>
+              <div class="skillbar-track"><span class="skillbar-fill" style="width:70%"></span></div>
+            </div>
+            <div class="skillrow">
+              <div class="top"><span>Git / GitHub Pages</span><span class="meta">عملي — نشر كل المشاريع</span></div>
+              <div class="skillbar-track"><span class="skillbar-fill" style="width:75%"></span></div>
+            </div>
+          </div>
+          <div class="skillbar-card reveal">
+            <div class="skillrow">
+              <div class="top"><span>n8n / الأتمتة والوكلاء</span><span class="meta">قيد التطوير — الوكيل الشخصي</span></div>
+              <div class="skillbar-track"><span class="skillbar-fill" style="width:35%"></span></div>
+            </div>
+            <div class="skillrow">
+              <div class="top"><span>تصميم الأنظمة الوكيلة (Agentic AI)</span><span class="meta">تدريب — IBM SkillsBuild</span></div>
+              <div class="skillbar-track"><span class="skillbar-fill" style="width:45%"></span></div>
+            </div>
+            <div class="skillrow">
+              <div class="top"><span>حل المشكلات المنظّم</span><span class="meta">شهادة — McKinsey Forward</span></div>
+              <div class="skillbar-track"><span class="skillbar-fill" style="width:80%"></span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="section-kicker">04 — المشاريع والتطبيقات</div>
+          <h2 class="section-title">مشاريع وحلول رقمية</h2>
+          <p class="section-desc">أدوات وتطبيقات تم تطويرها لخدمة أغراض متعددة.</p>
+        </div>
+
+        <div class="proj-filters">
+          <button class="proj-filter active" data-pf="all">الكل</button>
+          <button class="proj-filter" data-pf="live">منشور</button>
+          <button class="proj-filter" data-pf="dev">قيد التطوير</button>
+        </div>
+
+        <div class="projects-grid" id="projGrid">
+          <article class="project glass reveal" data-status="live">
+            <div class="project-top"><i class="fa-solid fa-calculator"></i></div>
+            <div class="project-body">
+              <h3>حاسبة الراتب</h3>
+              <p>
+                أداة ويب لحساب الراتب بطريقة سهلة ومنظمة مع واجهة بسيطة مناسبة للاستخدام اليومي.
+              </p>
+              <div class="tags"><span class="tag">Web App</span><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
+              <div class="project-actions">
+                <a class="btn btn-primary" href="https://rashedalabidi7-beep.github.io/salary-calculator/" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i> عرض المشروع</a>
+                <a class="btn btn-outline" href="https://github.com/rashedalabidi7-beep/salary-calculator" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> الكود</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project glass reveal" data-status="live">
+            <div class="project-top"><i class="fa-solid fa-mobile-screen"></i></div>
+            <div class="project-body">
+              <h3>مساحتي: تطبيق شخصي لتنظيم الحياة</h3>
+              <p>تطبيق ويب لإدارة الدراسة والمال والعادات والملاحظات، بتسجيل دخول Google وحفظ سحابي عبر Firebase، ووضع ليلي ونهاري وواجهة عربية وإنجليزية.</p>
+              <div class="tags"><span class="tag">Firebase</span><span class="tag">Google Auth</span><span class="tag">JavaScript</span></div>
+              <div class="project-actions">
+                <a class="btn btn-primary" href="https://rashedalabidi7-beep.github.io/masahati/" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i> عرض المشروع</a>
+                <a class="btn btn-outline" href="https://github.com/rashedalabidi7-beep/masahati" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> الكود</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project glass reveal" data-status="dev">
+            <div class="project-top"><i class="fa-solid fa-robot"></i></div>
+            <div class="project-body">
+              <h3>وكيل ذكاء اصطناعي شخصي <span class="tag">قيد التطوير</span></h3>
+              <p>وكيل ذكاء اصطناعي شخصي يعمل بأتمتة n8n ويساعدني في مهام الحياة اليومية، أتعلّم من خلاله تصميم الأنظمة الوكيلة.</p>
+              <div class="tags"><span class="tag">n8n</span><span class="tag">AI Agents</span><span class="tag">Automation</span></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="section-kicker">05 — البرامج والشهادات</div>
+          <h2 class="section-title">مسيرة التعلم والتطوير المهني</h2>
+          <p class="section-desc">مؤهلات، برامج تدريبية، وشهادات دولية تم الحصول عليها.</p>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline-item reveal">
+            <div class="date">أغسطس 2026 - الحالي</div>
+            <h3>برنامج الجاهزية المهنية للشباب العربي (مشارك مقبول في البرنامج)</h3>
+            <p>مبادرة أطلقها <strong>مركز الشباب العربي</strong> بالتعاون مع منصة <strong>LinkedIn Learning</strong> بهدف تمكين الشباب واكتساب مهارات عملية وشهادات مهنية معترف بها وبناء ملفات شخصية احترافية لمواكبة متطلبات سوق العمل (يمتد لمدة 5 أشهر ويشمل 10 مسارات تعليمية وتقنية).</p>
+          </div>
+          <div class="timeline-item reveal">
+            <div class="date">يوليو 2026</div>
+            <h3>برنامج ماكنزي فورورد — McKinsey Forward | McKinsey & Company</h3>
+            <p>برنامج مكثف لتطوير المهارات القيادية والتحليلية، القيادة التكيفية، وحل المشكلات المعقدة بناءً على البيانات.</p>
+          </div>
+          <div class="timeline-item reveal">
+            <div class="date">مايو 2026</div>
+            <h3>معسكر الذكاء الاصطناعي الوكيلي — IBM SkillsBuild Youth</h3>
+            <p>تدريب مكثف في أساسيات الذكاء الاصطناعي التوليدي وتصميم الأنظمة الذكية الوكيلة (Agentic Systems).</p>
+                    </div>
+          <div class="timeline-item reveal">
+            <div class="date">أبريل 2026</div>
+            <h3>سلسلة ندوات الملكية الفكرية والبحث العلمي — WIPO</h3>
+            <p>تعزيز مهارات البحث العلمي والتعرف على أدوات الويبو وقواعد البيانات العلمية لدعم الوصول للمعرفة.</p>
+          </div>
+          <div class="timeline-item reveal">
+            <div class="date">مارس 2026</div>
+            <h3>إدارة المعرفة للمحترفين الشباب — UNU-MERIT وجامعة ماسترخت</h3>
+            <p>تدريب متخصص في تنظيم الأصول المعرفية وبناء الحلول المعلوماتية المستدامة لتمكين المجتمعات (معتمد بـ 2 ECTS Credits).</p>
+          </div>
+          <div class="timeline-item reveal">
+            <div class="date">يناير 2026</div>
+            <h3>أساسيات التسويق الرقمي والتجارة الإلكترونية — Google (Coursera)</h3>
+            <p>دراسة شاملة لاستراتيجيات التسويق الرقمي وإدارة قنوات التجارة الإلكترونية.</p>
+          </div>
+          <div class="timeline-item reveal">
+            <div class="date">ديسمبر 2025</div>
+            <h3>الذكاء الاصطناعي للجميع — DeepLearning.AI & ICDL</h3>
+            <p>دراسة أثر تطبيقات الذكاء الاصطناعي التكنولوجية والأخلاقية، والحصول على شهادة ICDL معتمدة.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="volunteering">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="section-kicker">06 — الأثر المجتمعي</div>
+          <h2 class="section-title">المبادرات والأنشطة التطوعية</h2>
+          <p class="section-desc">المشاركات والأنشطة التطوعية التي أسهمت في بناء وخدمة المجتمع والشباب.</p>
+        </div>
+
+        <div class="volunteer-grid">
+          <article class="card glass reveal">
+            <h3><i class="fa-solid fa-hands-holding-child gradient-text"></i> فريق بذرة خير التطوعي</h3>
+            <p>
+              عضو فعال في فريق بذرة خير التطوعي، والمشاركة في التنظيم والمساهمة في تنفيذ المبادرات والأنشطة الإنسانية والمجتمعية المختلفة.
+            </p>
+            <div class="tags" style="margin-top:12px;">
+              <span class="tag">العمل التطوعي</span>
+              <span class="tag">المبادرات المجتمعية</span>
+            </div>
+          </article>
+
+          <article class="card glass reveal">
+            <h3><i class="fa-solid fa-graduation-cap gradient-text"></i> ملتقى شباب قبيلة العبيدي ودعم الطلاب</h3>
+            <p>
+              المشاركة في الأنشطة والبرامج الموجهة لدعم الطلاب وتسهيل مسيرتهم التعليمية وتوجيههم وتأهيلهم للبيئات الأكاديمية.
+            </p>
+            <div class="tags" style="margin-top:12px;">
+              <span class="tag">دعم الطلاب</span>
+              <span class="tag">التوجيه الأكاديمي</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+       <section id="contact">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="section-kicker">07 — التواصل</div>
+          <h2 class="section-title">لنتواصل ونعمل معًا</h2>
+          <p class="section-desc">منفتح للتعاون في المشاريع التقنية والفرص التعليمية والتطوعية.</p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="card glass reveal">
+            <h3>معلومات التواصل</h3>
+            <p>يسعدني التواصل معكم للتعاون في المشاريع التقنية والفرص التعليمية.</p>
+            <div class="contact-list">
+              <div class="contact-item"><i class="fa-solid fa-envelope"></i><a href="mailto:rashedalabidi7@gmail.com">rashedalabidi7@gmail.com</a><button class="copy" id="copyMail" type="button" aria-label="نسخ البريد"><i class="fa-regular fa-copy"></i></button></div>
+              <div class="contact-item"><i class="fa-solid fa-location-dot"></i><span>حضرموت، اليمن</span></div>
+              <div class="contact-item"><i class="fa-brands fa-github"></i><a href="https://github.com/rashedalabidi7-beep" target="_blank" rel="noopener">GitHub</a></div>
+              <div class="contact-item"><i class="fa-brands fa-linkedin"></i><a href="https://www.linkedin.com/in/rashed-alabidi" target="_blank" rel="noopener">LinkedIn</a></div>
+              <div class="contact-item"><i class="fa-brands fa-orcid"></i><a href="https://orcid.org/0009-0006-7410-5763" target="_blank" rel="noopener">ORCID</a></div>
+            </div>
+          </div>
+
+          <div class="card glass reveal">
+            <h3>أرسل رسالة</h3>
+            <form id="contactForm">
+              <div class="form-row">
+                <input type="text" placeholder="الاسم" required>
+                <input type="email" placeholder="البريد الإلكتروني" required>
+              </div>
+              <input type="text" placeholder="موضوع الرسالة" required>
+              <textarea placeholder="اكتب رسالتك هنا..." required></textarea>
+              <button class="btn btn-primary" type="submit"><i class="fa-solid fa-paper-plane"></i> إرسال عبر البريد</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      © <span id="year"></span> رشيد العبيدي — جميع الحقوق محفوظة.
+    </div>
+  </footer>
+
+  <button class="back-top" id="backTop" aria-label="العودة إلى الأعلى"><i class="fa-solid fa-arrow-up"></i></button>
+
+  <script>
+    const menuBtn = document.getElementById("menuBtn");
+    const navLinks = document.getElementById("navLinks");
+    const backTop = document.getElementById("backTop");
+
+    menuBtn.addEventListener("click", () => {
+      navLinks.classList.toggle("open");
+      menuBtn.setAttribute("aria-expanded", navLinks.classList.contains("open"));
+      menuBtn.innerHTML = navLinks.classList.contains("open")
+        ? '<i class="fa-solid fa-xmark"></i>'
+        : '<i class="fa-solid fa-bars"></i>';
+    });
+
+    document.querySelectorAll(".nav-links a").forEach(link => {
+      link.addEventListener("click", () => {
+        navLinks.classList.remove("open");
+        menuBtn.innerHTML = '<i class="fa-solid fa-bars"></i>';
+      });
+    });
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) entry.target.classList.add("visible");
+      });
+    }, { threshold: .12 });
+
+    document.querySelectorAll(".reveal").forEach(el => observer.observe(el));
+
+    const counters = document.querySelectorAll(".stat-number");
+    const counterObserver = new IntersectionObserver((entries, obs) => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        const el = entry.target;
+        const target = Number(el.dataset.target);
+        let current = 0;
+        const step = Math.max(1, Math.ceil(target / 25));
+        const timer = setInterval(() => {
+          current += step;
+          if (current >= target) {
+            current = target;
+            clearInterval(timer);
+          }
+          el.textContent = current + (target >= 10 ? "+" : "");
+        }, 45);
+        obs.unobserve(el);
+      });
+    }, { threshold: .6 });
+
+    counters.forEach(el => counterObserver.observe(el));
+
+    window.addEventListener("scroll", () => {
+      backTop.classList.toggle("show", window.scrollY > 500);
+    });
+
+    backTop.addEventListener("click", () => window.scrollTo({ top: 0, behavior: "smooth" }));
+
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    // للإرسال المباشر: احصل على مفتاح مجاني من web3forms.com (يصلك على بريدك) وضعه بين علامتي التنصيص
+    const WEB3FORMS_KEY = "";
+    const form = document.getElementById("contactForm");
+    const note = document.createElement("p");
+    note.className = "form-note"; note.setAttribute("role", "status");
+    form.appendChild(note);
+    form.addEventListener("submit", async (e) => {
+      e.preventDefault();
+      const [n, m, sub] = form.querySelectorAll("input"), msg = form.querySelector("textarea");
+      if (!WEB3FORMS_KEY) {
+        location.href = `mailto:rashedalabidi7@gmail.com?subject=${encodeURIComponent(sub.value)}&body=${encodeURIComponent("الاسم: " + n.value + "\nالبريد: " + m.value + "\n\n" + msg.value)}`;
+        return;
+      }
+      note.textContent = "جارٍ الإرسال...";
+      try {
+        const r = await fetch("https://api.web3forms.com/submit", { method: "POST", headers: { "Content-Type": "application/json", Accept: "application/json" }, body: JSON.stringify({ access_key: WEB3FORMS_KEY, name: n.value, email: m.value, subject: sub.value, message: msg.value }) });
+        if (!(await r.json()).success) throw 0;
+        form.reset(); note.textContent = "تم إرسال رسالتك، شكرًا لك.";
+      } catch (x) { note.textContent = "تعذر الإرسال. راسلني على بريدي مباشرة."; }
+    });
+
+    document.getElementById("copyMail").addEventListener("click", (e) => {
+      const b = e.currentTarget;
+      navigator.clipboard && navigator.clipboard.writeText("rashedalabidi7@gmail.com").then(() => {
+        b.innerHTML = '<i class="fa-solid fa-check"></i>';
+        setTimeout(() => b.innerHTML = '<i class="fa-regular fa-copy"></i>', 1500);
+      });
+    });
+
+    // روابط الشهادات بنفس ترتيب الخط الزمني (من الأحدث إلى الأقدم). اتركها فارغة لإخفاء الرابط.
+    const CERT_LINKS = ["", "", "", "", "", "", ""];
+    document.querySelectorAll(".timeline-item").forEach((it, i) => {
+      if (!CERT_LINKS[i]) return;
+      const a = document.createElement("a");
+      a.className = "cert"; a.href = CERT_LINKS[i]; a.target = "_blank"; a.rel = "noopener";
+      a.innerHTML = '<i class="fa-solid fa-certificate"></i> عرض الشهادة';
+      it.appendChild(a);
+    });
+  
+    const prog = document.getElementById("prog");
+    addEventListener("scroll", () => {
+      const m = document.documentElement.scrollHeight - innerHeight;
+      prog.style.transform = "scaleX(" + (m > 0 ? scrollY / m : 0) + ")";
+    }, { passive: true });
+
+    const links = [...document.querySelectorAll(".nav-links a")];
+    const spy = new IntersectionObserver(es => es.forEach(e => {
+      if (e.isIntersecting) links.forEach(a => a.classList.toggle("active", a.getAttribute("href") === "#" + e.target.id));
+    }), { rootMargin: "-40% 0px -55% 0px" });
+    document.querySelectorAll("main section[id]").forEach(x => spy.observe(x));
+
+    const roles = ["الذكاء الاصطناعي", "التحول الرقمي", "إدارة المعرفة", "البحث العلمي", "التنمية المستدامة"];
+    const role = document.getElementById("role");
+    let ri = 0;
+    role.textContent = roles[0];
+    if (!matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      setInterval(() => {
+        role.style.opacity = 0;
+        setTimeout(() => { ri = (ri + 1) % roles.length; role.textContent = roles[ri]; role.style.opacity = 1; }, 300);
+      }, 2400);
+    }
+
+    const cv = document.getElementById("cvBtn");
+    fetch("cv.pdf", { method: "HEAD" }).then(r => { if (!r.ok) cv.style.display = "none"; }).catch(() => {});
+
+    document.querySelectorAll(".proj-filter").forEach(btn => {
+      btn.addEventListener("click", () => {
+        document.querySelectorAll(".proj-filter").forEach(b => b.classList.remove("active"));
+        btn.classList.add("active");
+        const f = btn.dataset.pf;
+        document.querySelectorAll("#projGrid .project").forEach(p => {
+          p.classList.toggle("hide", f !== "all" && p.dataset.status !== f);
+        });
+      });
+    });
+  </script>
+</body>
+</html>
